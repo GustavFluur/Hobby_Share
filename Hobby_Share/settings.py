@@ -43,12 +43,23 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
     'django_summernote',
+    'crispy_forms',
     'Hobby_Share',
 ]
+
+SITE_ID = 1
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+ACCOUNT_EMAIL_VERIFICATION = False
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -79,6 +90,7 @@ TEMPLATES = [
 ]
 
 
+
 WSGI_APPLICATION = 'Hobby_Share.wsgi.application'
 
 
@@ -93,7 +105,7 @@ WSGI_APPLICATION = 'Hobby_Share.wsgi.application'
 # }
 
 DATABASES = {
-   'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+   'default': dj_database_url.parse("postgres://xipuohhhifvuho:fd32927b4805876c56b47ca907a629b04d9332c4d3878b934efcee8d67fe5d4a@ec2-52-212-228-71.eu-west-1.compute.amazonaws.com:5432/d2rcm7ibvi9nh7")
 }
 
 
