@@ -19,8 +19,5 @@ from Share_Hobby.views import say_hello
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('summernote/', include('django_summernote.urls')),
-    path("", include("Hobby_Share.urls"), name="Hobby_Share_urls"),
-    path("accounts/", include("allauth.urls")), 
+    path('hello/', say_hello, name = 'hello'),
 ]
-
