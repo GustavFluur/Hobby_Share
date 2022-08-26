@@ -42,17 +42,14 @@
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
                     </li>
                     {% endif %}
 
                 </ul>
-                <span class="navbar-text text-muted">
-                    Your new curiosity begins here!
-                </span>
             </div>
         </div>
     </nav>
@@ -69,6 +66,14 @@
         </div>
     </div>
 
+    <div>
+        <span class="navbar-text text-muted">
+            <ul>
+                Your new curiosity begins here!
+            </ul>
+        </span>
+    </div>
+
     <main class="flex-shrink-0 main-bg">
 
         {% block content %}
@@ -78,7 +83,7 @@
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
-        <p class="m-0 text-center text-white">Made by Code Instituters</p>
+        <p class="m-0 text-center text-white">Happiness is all about Sharing</p>
         <p class="m-0 text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
             <i class="fab fa-twitter-square ms-3"></i>
             <i class="fab fa-instagram-square ms-3"></i>

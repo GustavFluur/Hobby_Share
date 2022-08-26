@@ -116,7 +116,7 @@ WSGI_APPLICATION = 'Hobby_Share.wsgi.application'
 # }
 
 DATABASES = {
-   'default': dj_database_url.parse("postgres://xipuohhhifvuho:fd32927b4805876c56b47ca907a629b04d9332c4d3878b934efcee8d67fe5d4a@ec2-52-212-228-71.eu-west-1.compute.amazonaws.com:5432/d2rcm7ibvi9nh7")
+   'default': dj_database_url.parse("postgres://vdclwzrfjayfav:7a46a576fe8887fcbbe2f55375c1e5f3f8eff6d612d8a21bc6ef5e9ee2460275@ec2-52-31-70-136.eu-west-1.compute.amazonaws.com:5432/d2bp4m8ftnrmbt")
 }
 
 
