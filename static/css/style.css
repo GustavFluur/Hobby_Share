@@ -89,7 +89,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #e8e110;
 }
 
 .post-title {
@@ -125,14 +125,14 @@ body {
 }
 
 .btn-like {
-    color: #E84610;
+    color: #e8e110;
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: #e8e110;
     background: transparent;
     border: none;
 }
