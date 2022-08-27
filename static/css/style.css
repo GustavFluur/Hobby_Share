@@ -6,11 +6,7 @@ body {
     font-family: Lato, sans-serif;
     font-size: 5rem;
     font-weight: 700;
-    color: #f7f305;
-}
-
-.red-o {
-    color: #E84610;
+    color: #058ef7;
 }
 
 .thin {
@@ -139,4 +135,9 @@ body {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+.navbar-collapse {
+    position: absolute;
+    right: 5rem;
 }
