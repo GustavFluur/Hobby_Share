@@ -41,11 +41,11 @@
                                 {% if liked %}
                                 <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-thumbs-up"></i></button>
                                 {% else %}
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-thumbs-up"></i></button>
                                 {% endif %}
                             </form>
                             {% else %}
-                            <span class="text-secondary"><i class="far fa-heart"></i></span>
+                            <span class="text-secondary"><i class="fas fa-thumbs-up"></i></span>
                             {% endif %}
                         <!-- The number of likes goes before the closing strong tag -->
                         <span class="text-secondary">{{ post.number_of_likes }} </span>
