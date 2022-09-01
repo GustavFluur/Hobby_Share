@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +10,40 @@
     <title>Hobby Share</title>
 </head>
 <body>
+    <div class="container-fluid">
+        <h1>Welcome to Hobby Share</h1>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+          <div class="col-6">
+
+            <h4>Who are we?</h1>
+            <p>
+                We are a group of hobby enthusiasts who want others to share their interests to inspire people and most importantly to connect us with each other.
+
+            </p>
+          </div>
+          <div class="col-6">
+            <h4>What we want:</h1>
+            <p>Please join our community to start sharing your interest with others, perhaps you learn something new?</p>
+          </div>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="https://images.pexels.com/photos/5699509/pexels-photo-5699509.jpeg?auto=compress&cs=tinysrgb&w=800" class="img-thumbnail" alt="Vinyl">
+          </div>
+          <div class="col">
+            <img src="https://images.pexels.com/photos/6039249/pexels-photo-6039249.jpeg?auto=compress&cs=tinysrgb&w=800" class="img-thumbnail" alt="Skateboard">
+          </div>
+          <div class="col">
+            <img src="https://images.pexels.com/photos/4861373/pexels-photo-4861373.jpeg?auto=compress&cs=tinysrgb&w=800" class="img-thumbnail" alt="Reading">
+          </div>
+        </div>
+      </div>
+    
+ 
     
 </body>
 </html>
+{%endblock%}
