@@ -1,5 +1,26 @@
+.about-header{
+    color: #058ef7;
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 4px;
+    height: 50px;  
+}
+
+
+.who-are-we-p {
+    background-color: #23BBBB;
+    box-shadow: 10px 10px;
+}
+.what-we-want-p {
+    background-color: cornflowerblue;
+    box-shadow: 10px 10px;
+
+}
+
 body {
-    background-color: #F9FAFC;
+    background-color: lightblue;
 }
 
 .brand {
@@ -40,6 +61,10 @@ body {
     min-width: 30%;
     left: -2px;
     background-color: #e9fa00;
+}
+
+.card-img-top {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .author {
