@@ -41,7 +41,7 @@
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
                     <li>
-                        <a class="nav-link active" aria-current="page" href="about.html">About Us!</a>
+                        <a class="nav-link" aria-current="page" href="{% url 'about' %}">About Us!</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -60,6 +60,9 @@
             </div>
         </div>
     </nav>
+    <div>
+        <span class="navbar-text text-muted"><h6 class="slogan">"Your new curiosity begins here!"</h6></span>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -72,15 +75,6 @@
             </div>
         </div>
     </div>
-
-    <div>
-        <span class="navbar-text text-muted">
-            <ul>
-                Your new curiosity begins here!
-            </ul>
-        </span>
-    </div>
-
     <main class="flex-shrink-0 main-bg">
 
         {% block content %}

@@ -5,38 +5,60 @@
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 4px;
-    height: 50px;  
+    height: 50px;
+    padding: 5%;  
 }
 
+.about-us-short {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.about-call-to-action {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
 
 .who-are-we-p {
-    background-color: #23BBBB;
-    box-shadow: 10px 10px;
+    height: 50px;
+    text-align: center;
 }
 .what-we-want-p {
-    background-color: cornflowerblue;
-    box-shadow: 10px 10px;
+    height: 50px;
+    text-align: center;
+}
+
+.about-us {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 4px;
+    height: 50px;
+    padding: 40px;
 
 }
+
 
 body {
     background-color: lightblue;
 }
 
 .brand {
-    font-family: Lato, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 5rem;
     font-weight: 700;
     color: #058ef7;
+    padding: 1%;
 }
 
-.thin {
-    font-weight: 300;
+.slogan {
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    padding: 1%;
+    text-align: center;
 }
 
-.light-bg {
-    background-color: #fff;
-}
 
 .dark-bg {
     background-color: #445261;
@@ -114,7 +136,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #e8e110;
+    color: #058ef7;
 }
 
 .post-title {
@@ -165,4 +187,9 @@ body {
 .navbar-collapse {
     position: absolute;
     right: 5rem;
+}
+
+.nav-link {
+    background-color: #e8e110;
+    box-shadow: 10px 10px;
 }
