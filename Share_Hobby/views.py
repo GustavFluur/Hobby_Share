@@ -3,6 +3,7 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
+from .forms import PostForm
 
 
 class PostList(generic.ListView):
@@ -37,6 +38,18 @@ class PostDetail(View):
             },
         )
     
+class CreatePost(View):
+
+    def get(self, request, *args, **kwargs):
+        return render(
+            request,
+            "create_post.html", 
+            {
+                "form": PostForm()
+            },
+        )
+        
+
     def post(self, request, slug, *args, **kwargs):
 
         queryset = Post.objects.filter(status=1)
