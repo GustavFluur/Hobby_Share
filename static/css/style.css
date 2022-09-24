@@ -1,3 +1,7 @@
+/*===============
+About page 
+===============*/
+
 .about-header{
     color: #058ef7;
     font-family: sans-serif;
@@ -213,4 +217,35 @@ body {
 .nav-link {
     background-color: #e8e110;
     box-shadow: 10px 10px;
+}
+
+/*===============
+Create Post page 
+===============*/
+
+.create-post-title {
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    border: #058ef7;
+}
+
+.create-post {
+    background-color: #e8e110;
+    box-shadow: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+}
+
+#create_post_form {
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1%;
+    font-weight: bold;
+
+}
+
+.create-post-button {
+    text-align: right;
+
 }

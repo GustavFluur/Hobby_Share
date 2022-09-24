@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
-            <h3>{% trans "Create a Post" %}</h3>
+            <h3 class="create-post-title">{% trans "Create a Post" %}</h3>
 
         </div>
     </div>
@@ -12,14 +12,14 @@
         <div class="col-md-8 mt-3 offset-md-2">
             <form class="create-post" id="create_post_form" method="post" action="{% url 'create_post' %}">
                 {% csrf_token %}
-                <div><label for="title">Title:</label>{{ form.title }}</div>
-                <div><label for="excerpt">Excerpt:</label>{{ form.excerpt }}</div>
-                <div><label for="content">Content:</label>{{ form.content }}</div>
-                <div><label for="status">Status:</label>{{ form.status }}</div>
-               
-            
-                
+                <div class="mb-4"><label for="title">Title: &nbsp; &nbsp;&nbsp;</label> {{ form.title }}  </div>
+                <div class="mb-3"><label for="excerpt">Excerpt: </label> {{ form.excerpt }} </div>
+                <div class="mb-3"><label for="content">Content: </label> {{ form.content }} </div>
+                <div class="mb-3"><label for="status">Status: </label> {{ form.status }} </div>
+                <br>
+                <div class="create-post-button">
                 <button class="btn btn-primary right" type="submit">{% trans "Create Post" %} &raquo;</button>
+                </div>
             </form>
         </div>
     </div>
