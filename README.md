@@ -105,11 +105,70 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 
 ---
 
+# Bugs
+
+#### create_post.html
+
+##### Error
+    form class="create-post" id="create_post_form" method="post" action="{% url 'create_post' %}"
+
+The data wasn't registrated from the form and the images wasn't uploaded to the home page. However, in the database demonstrated from tableplus it was registrated there and as well as in the django administration page. 
+
+##### Fixed Error
+    form class="create-post" id="create_post_form" method="post" enctype="multipart/form-data" action="{% url 'create_post' %}"
+
+The issue was resolved by adding the enctype attribute and everything was finally added into the data, which the user was now able to post images related to their blogpost. It was required to have this feature cause without it would create a bad user experience and the purpose of the website wouldn't meet up to its expectations.   
+
+#### views.py
+
+##### Error
+class CreatePost(View):
+
+    def get(self, request, *args, **kwargs):
+        return render(
+            request,
+            "create_post.html", 
+            {
+                "form": PostForm()
+            },
+        )
+        
+
+    def post(self, request, *args, **kwargs):
+
+        post_form = PostForm(request.POST)
+
+Related to the issue above in terms of uploading and creating posts, it was unable to pin a image into the your own blog. Thanks to no request.FILES where added in the function. That generated the problems to store data for user's benefit and see were it went. 
+
+
+##### Fixed Error
+
+class CreatePost(View):
+
+    def get(self, request, *args, **kwargs):
+        return render(
+            request,
+            "create_post.html", 
+            {
+                "form": PostForm()
+            },
+        )
+        
+
+    def post(self, request, *args, **kwargs):
+
+        post_form = PostForm(request.POST, request.FILES)
+
+By added request.FILES in the post form it was finally resolved by adding this missing feature. Once something is missing it creates error and thanks to the documentation from the terminal it gave the path of a good result to determine where the bug was. 
+
+
+
 # Credits
 
 - [I think and therefore I blog - Walkthrough Project](https://github.com/Code-Institute-Solutions/Django3blog/tree/master/12_final_deployment) & [Website: ](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/)
 - [Django Blog Application - Full Tutorial 2022](https://www.youtube.com/watch?v=I8TRkEcw9Mg)
 - [Django For Everybody - Full Python University Course](https://www.youtube.com/watch?v=o0XbHvKxw7Y)
+- [Build a Social Media App with Django – Python Web Framework Tutorial](https://www.youtube.com/watch?v=xSUm6iMtREA)
 
 # Media 
 
