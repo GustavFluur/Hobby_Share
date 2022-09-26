@@ -108,6 +108,11 @@ body {
 
 .word-art {
     border-radius: 50%;
+    box-shadow: 10px 10px 10px 10px;
+    background-color: #058ef7;
+    height: 100%;
+    width: auto;
+
 }
 
 .card-img-top {

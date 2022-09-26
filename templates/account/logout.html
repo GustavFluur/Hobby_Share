@@ -8,9 +8,9 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
-            <h3>{% trans "Sign Out" %}</h3>
+            <h3>{% trans "Log Out" %}</h3>
 
-            <p>{% trans 'Are you sure you want to sign out?' %}</p>
+            <p>{% trans 'Wanna leave us already? Hope we see you soon again!' %}</p>
         </div>
     </div>
     <div class="row">
@@ -21,9 +21,13 @@
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
-                <button class="btn btn-primary right" type="submit">{% trans 'Sign Out' %}</button>
+                <button class="btn btn-primary right" type="submit">{% trans 'Leave Hobby Share' %}</button>
             </form>
+            <br>
+            <img src="https://images.pexels.com/photos/4439451/pexels-photo-4439451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid" alt="Goodbye">
         </div>
     </div>
 </div>
+
+
 {% endblock %}
