@@ -18,7 +18,7 @@
     </script>
     
     <!-- Favicon link -->
-    <link rel="icon" type="image/xicon" href="{% static 'favicon/favicon-32x32.png' %}" />
+    <link rel="icon" type="image/xicon" href="{% static 'favicon/favicon.png' %}" />
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
@@ -49,6 +49,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{% url 'create_post' %}">Create a Post</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" aria-current="page" href="{% url 'contact' %}">Contact|Support</a>
                     </li>
                     {% else %}
                     <li class="nav-item">

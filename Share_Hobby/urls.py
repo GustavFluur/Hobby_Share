@@ -7,4 +7,5 @@ urlpatterns = [
     path('posts/create', views.CreatePost.as_view(), name='create_post'),
     path('like/<slug:slug>', views.PostLike.as_view(), name='post_like'),
     path('about.html', views.about, name="about"),
+    path('contact.html', views.contact, name='contact'),
 ]

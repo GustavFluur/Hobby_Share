@@ -18,6 +18,11 @@ class PostList(generic.ListView):
 def about(request):
     return render(request, 'about.html')
 
+def contact(request):
+    return render(request, 'contact.html')
+
+
+
 class PostDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
