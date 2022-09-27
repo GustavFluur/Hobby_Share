@@ -59,13 +59,18 @@
                         {% endwith %}
                     </div>
                     <div class="col">
+                        {% if user.is_authenticated %}
                         <strong class="text-secondary"><i class="fas fa-edit"></i>
-                             <!-- If the user wishes to change its post for the better here: -->
+                             <!-- If the user wishes to edit/change its post for the better here: -->
                             <a href="{% url 'edit_post' post.id %}">Edit</a>
+                        
                     </div>
                     <div class="col">
+                        
                         <strong class="text-secondary"><i class="fas fa-trash-alt"></i>
+                             <!-- If the user wishes to delete its post for the better here: -->
                             <a href="{% url 'delete_post' post.id %}">Delete</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -102,7 +107,7 @@
             <div class="card-body">
                 <!-- For later -->
                 {% if commented %}
-                <div class="alert alert-success" role="alert">
+                <div class="alert alert-primary" role="alert">
                     Your comment is now posted! 
                 </div>
                 {% else %}

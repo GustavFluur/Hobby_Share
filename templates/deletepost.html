@@ -10,6 +10,7 @@
         </div>
     </div>
     <div class="row">
+        {% if user.is_authenticated %}
         <div class="col-md-8 mt-3 offset-md-2">
             <form class="create-post" id="create_post_form" method="POST" enctype="multipart/form-data" action="{% url 'delete_post' %}">
                 {% csrf_token %}
