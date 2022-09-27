@@ -33,7 +33,7 @@
                 </p>
                 <div class="row">
 
-                    <div class="col-1">
+                    <div class="col">
                         <strong>
                             {% if user.is_authenticated %}
                             <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
@@ -51,12 +51,21 @@
                         <span class="text-secondary">{{ post.number_of_likes }} </span>
                         </strong>
                     </div>
-                    <div class="col-1">
+                    <div class="col">
                         {% with comments.count as total_comments %}
                         <strong class="text-secondary"><i class="far fa-comments"></i>
                             <!-- Our total_comments variable goes before the closing strong tag -->
                             {{ total_comments }}</strong>
                         {% endwith %}
+                    </div>
+                    <div class="col">
+                        <strong class="text-secondary"><i class="fas fa-edit"></i>
+                             <!-- If the user wishes to change its post for the better here: -->
+                            <a href="{% url 'edit_post' post.id %}">Edit</a>
+                    </div>
+                    <div class="col">
+                        <strong class="text-secondary"><i class="fas fa-trash-alt"></i>
+                            <a href="{% url 'delete_post' post.id %}">Delete</a>
                     </div>
                 </div>
             </div>

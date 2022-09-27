@@ -1,16 +1,17 @@
 {% extends 'base.html' %} {% block content %}
+
 {% load i18n %}
 
 <div class="container">
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
-            <h3 class="create-post-title">{% trans "Create a Post" %}</h3>
+            <h3 class="create-post-title">{% trans "Edit Post" %}</h3>
 
         </div>
     </div>
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
-            <form class="create-post" id="create_post_form" method="POST" enctype="multipart/form-data" action="{% url 'create_post' %}">
+            <form class="create-post" id="create_post_form" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="mb-4"><label for="title">Title: &nbsp; &nbsp;&nbsp;</label> {{ form.title }} {{ form.errors.title }}</div>
                 <div class="mb-3"><label for="excerpt">Excerpt: </label> {{ form.excerpt }}  {{ form.errors.excerpt }}</div>
@@ -19,7 +20,7 @@
                 <br>
                 <div><label for="featured_image">Image:</label>{{ form.featured_image }}  {{ form.errors.featured_image }}</div>
                 <div class="create-post-button">
-                <button class="btn btn-primary right" type="submit">{% trans "Create Post" %} &raquo;</button>
+                <button class="btn btn-primary right" type="submit">{% trans "Edit Post" %} &raquo;</button>
                 </div>
             </form>
         </div>

@@ -121,7 +121,8 @@ The issue was resolved by adding the enctype attribute and everything was finall
 
 #### views.py
 
-##### Error
+#### Errors
+##### CRUD: 
 class CreatePost(View):
 
     def get(self, request, *args, **kwargs):
@@ -160,6 +161,31 @@ class CreatePost(View):
         post_form = PostForm(request.POST, request.FILES)
 
 By added request.FILES in the post form it was finally resolved by adding this missing feature. Once something is missing it creates error and thanks to the documentation from the terminal it gave the path of a good result to determine where the bug was. 
+
+##### Another error of the CRUD
+
+While working with CRUD function it was some issues to add the delete one, since I was doing the same changes and added the same functions with different attributes, names etc it gave me an error. It send the information on my website: http 405 which meant that no right method has been used and the website crashed. It also was a late night and it led on layers of more issues and a sense of feeling that you were stuck in a loop of bad repetion. 
+
+#### Error:
+
+
+class PostDelete(View):
+
+    def get(self, request, id, *args, **kwargs):
+        post = get_object_or_404(post.id)
+        post.delete()
+
+        return HttpResponseRedirect(reverse('home'))
+    
+##### Fixed Error
+
+    class PostDelete(View):
+
+        def get(self, request, id, *args, **kwargs):
+            post = get_object_or_404(Post, id=id)
+            post.delete()
+
+            return HttpResponseRedirect(reverse('home'))
 
 
 

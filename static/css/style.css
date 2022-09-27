@@ -61,7 +61,7 @@ About page
 
 
 body {
-    background-color: #F9FAFC;
+    background-color: #d1d5d5;
 }
 
 .brand {
@@ -106,11 +106,11 @@ body {
     background-color: #e9fa00;
 }
 
-.word-art {
+#word-art {
     border-radius: 50%;
     box-shadow: 10px 10px 10px 10px;
     background-color: #058ef7;
-    height: 100%;
+    height: auto;
     width: auto;
 
 }

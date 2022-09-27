@@ -2,8 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
-from .forms import CommentForm
-from .forms import PostForm
+from .forms import CommentForm, PostForm
 from django.utils.text import slugify
 from django.shortcuts import redirect
 
@@ -21,7 +20,36 @@ def about(request):
 def contact(request):
     return render(request, 'contact.html')
 
+class EditPost(View):
+    def get(self, request, id, *args, **kwargs):
+        post = get_object_or_404(Post, id=id)
+        return render( 
+            request,
+            'editpost.html',
+            {
+                "form": PostForm(instance=post)
+            }
+        )
 
+
+    def post(self, request, id, *args, **kwargs):
+        post = Post.objects.get(id=id)
+        post_form = PostForm(request.POST, request.FILES, instance=post)
+
+        if post_form.is_valid():
+            
+            post = post_form.save(commit=False)
+            post.slug = slugify(post.title)
+            post.save()
+            return redirect('post_detail', slug=post.slug)
+
+        return render(
+            request,
+            "editpost.html",
+            {
+                "form": post_form,
+            },
+        )
 
 class PostDetail(View):
 
@@ -29,9 +57,8 @@ class PostDetail(View):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=False).order_by("-created_on")
-        liked = False
-        if post.likes.filter(id=self.request.user.id).exists():
-            liked = True
+        liked = post.likes.filter(id=self.request.user.id).exists()
+        can_edit_post = self.request.user.id == post.author.id
 
         return render(
             request,
@@ -41,7 +68,8 @@ class PostDetail(View):
                 "comments": comments,
                 "commented": False,
                 "liked": liked,
-                "comment_form": CommentForm()
+                "comment_form": CommentForm(),
+                "can_edit_post": can_edit_post
             },
         )
 
@@ -119,3 +147,25 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+class PostDelete(View):
+
+    def get(self, request, id, *args, **kwargs):
+        post = get_object_or_404(Post, id=id)
+        post.delete()
+
+        return HttpResponseRedirect(reverse('home'))
+
+    #def get(self, request, id, *args, **kwargs):
+        #post = get_object_or_404(id=request.POST['post.id'])
+        #post.delete()
+
+        #return HttpResponseRedirect('/')
+
+
+#def get(self, request, id, *args, **kwargs):
+ #       post = get_object_or_404(post.id)
+ #       post.delete()
+
+#        return HttpResponseRedirect(reverse('home'))
