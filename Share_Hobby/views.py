@@ -58,7 +58,7 @@ class PostDetail(View):
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=False).order_by("-created_on")
         liked = post.likes.filter(id=self.request.user.id).exists()
-        can_edit_post = self.request.user.id == post.author.id
+        can_edit_post = self.request.user.id == post.blogger.id
 
         return render(
             request,
@@ -122,7 +122,7 @@ class CreatePost(View):
         post_form = PostForm(request.POST, request.FILES)
 
         if post_form.is_valid():
-            post_form.instance.author = request.user
+            post_form.instance.blogger = request.user
             post = post_form.save(commit=False)
             post.slug = slugify(post.title)
             post.save()
