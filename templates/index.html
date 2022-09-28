@@ -20,7 +20,7 @@
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
-                                    <p class="blogger"> Blogger: {{ post.blogger }}</p>
+                                    <p class="blogger"> Blogger: {{ post.author }}</p>
                                 </div>
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
@@ -31,7 +31,10 @@
                             </a>
                             <hr />
                             <p class="card-text text-muted h6">{{ post.created_on}} <i class="fas fa-thumbs-up"></i>
-                                {{ post.number_of_likes }}</p> 
+                                {{ post.number_of_likes }}</p>
+                            <!----   Add this later 
+                            <p class="card-text text-muted h6">{{ post.created_on}} <i class="fas fa-thumbs-down"></i>
+                                {{ post.number_of_dislikes }}</p>------>   
                             
                         </div>
                     </div>

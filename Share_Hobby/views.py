@@ -58,7 +58,7 @@ class PostDetail(View):
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=False).order_by("-created_on")
         liked = post.likes.filter(id=self.request.user.id).exists()
-        can_edit_post = self.request.user.id == post.blogger.id
+        can_edit_post = self.request.user.id == post.author.id
 
         return render(
             request,
@@ -148,6 +148,19 @@ class PostLike(View):
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
+# Add this later ==>
+
+#class PostDisLike(View):
+
+#    def post(self, request, slug, *args, **kwargs):
+#        post = get_object_or_404(Post, slug=slug)
+#        if post.dislikes.filter(id=request.user.id).exists():
+#            post.dislikes.remove(request.user)
+#        else:
+#            post.dislikes.add(request.user)
+
+#        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
 
 class PostDelete(View):
 
@@ -163,7 +176,8 @@ class PostDelete(View):
 
         #return HttpResponseRedirect('/')
 
-
+# Old backup code: 
+#=================
 #def get(self, request, id, *args, **kwargs):
  #       post = get_object_or_404(post.id)
  #       post.delete()
