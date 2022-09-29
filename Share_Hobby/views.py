@@ -165,7 +165,7 @@ class PostDelete(View):
 
 
 #def get(self, request, id, *args, **kwargs):
- #       post = get_object_or_404(post.id)
- #       post.delete()
+#       post = get_object_or_404(post.id)
+#       post.delete()
 
 #        return HttpResponseRedirect(reverse('home'))
