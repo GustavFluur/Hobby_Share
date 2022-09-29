@@ -9,12 +9,13 @@
 
         </div>
     </div>
+    <h3>You are now deleting this blog post....</h3>
     <div class="row">
         {% if user.is_authenticated %}
         <div class="col-md-8 mt-3 offset-md-2">
             <form class="create-post" id="create_post_form" method="POST" enctype="multipart/form-data" action="{% url 'delete_post' %}">
                 {% csrf_token %}
-                <strong>Are you sure to remove this Blog Post? </strong>
+                <strong>Are you sure to remove this Blog Post? </strong> <br>
                 <button class="btn btn-secondary">{% trans "Delete Post" %} &raquo;</button>
                 </div>
             </form>
