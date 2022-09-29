@@ -2,31 +2,35 @@
 
 {% load i18n %}
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
-            <h3 class="create-post-title">{% trans "Edit Post" %}</h3>
+{% if user.is_authenticated %}
+   
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mt-3 offset-md-2">
+                    <h3 class="create-post-title">{% trans "Edit Post" %}</h3>
 
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
-            {% if user.is_authenticated %}
-            <form class="create-post" id="create_post_form" method="POST" enctype="multipart/form-data">
-                {% csrf_token %}
-                <div class="mb-4"><label for="title">Title: &nbsp; &nbsp;&nbsp;</label> {{ form.title }} {{ form.errors.title }}</div>
-                <div class="mb-3"><label for="excerpt">Excerpt: </label> {{ form.excerpt }}  {{ form.errors.excerpt }}</div>
-                <div class="mb-3"><label for="content">Content: </label> {{ form.content }}  {{ form.errors.content }}</div>
-                <div class="mb-3"><label for="status">Status: </label> {{ form.status }}  {{ form.errors.status }}</div>
-                <br>
-                <div><label for="featured_image">Image:</label>{{ form.featured_image }}  {{ form.errors.featured_image }}</div>
-                <div class="create-post-button">
-                <button class="btn btn-primary right" type="submit">{% trans "Edit Post" %} &raquo;</button>
                 </div>
-            </form>
-            {%endif%}
+            </div>
+            <div class="row">
+                <div class="col-md-8 mt-3 offset-md-2">
+                    
+                    <form class="create-post" id="create_post_form" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="mb-4"><label for="title">Title: &nbsp; &nbsp;&nbsp;</label> {{ form.title }} {{ form.errors.title }}</div>
+                        <div class="mb-3"><label for="excerpt">Excerpt: </label> {{ form.excerpt }}  {{ form.errors.excerpt }}</div>
+                        <div class="mb-3"><label for="content">Content: </label> {{ form.content }}  {{ form.errors.content }}</div>
+                        <div class="mb-3"><label for="status">Status: </label> {{ form.status }}  {{ form.errors.status }}</div>
+                        <br>
+                        <div><label for="featured_image">Image:</label>{{ form.featured_image }}  {{ form.errors.featured_image }}</div>
+                        <div class="create-post-button">
+                        <button class="btn btn-primary right" type="submit">{% trans "Edit Post" %} &raquo;</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    
+{%endif%}
 
 {% endblock content %}

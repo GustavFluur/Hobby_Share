@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        <h1 class="about-header">Welcome to Hobby Share!</h1>
+        <h1 class="about-header">Welcome {{ user.username }} to Hobby Share!</h1>
     </div>
     <br>
     <div class="container">
@@ -63,18 +63,24 @@
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><p>Hobbies can sometimes be difficult to find what is right for you and using <strong>Hobby Share</strong> as a
-                  community will make you as a user introduced to trying something new. Today people are often getting overwhelmed by
-                  all sorts of information either from social media, news, or things on daily basis. We want to make it easier for
-                  people to see what is out there and get inspired to start with a new hobby. </p> <br> <p><strong>Hobby Share</strong> was established in the late 1990s in Manhattan, 
-                  New York as a brick-and-mortar store. <br> Where book clubs were renting the place and organized events to share their most trending books with potential
-                  customers. A couple of years later the user behavior changed profoundly since the internet became a powerful source of
-                  communication and the market choose organizations like Amazon to get all the introductions of the best-selling books
-                  online as well as able to make a purchase. It made us rethink our business strategy and we wanted to create something
-                  new for our market. That is how we came up with the idea that if people can share their hobbies online it will create
-                  a sense of gathering point. </p><br><p>Thus, not only books but interest of any kind is a great place to get to know each other. Today people are receiving
-                  all sorts of information from social media and other websites that can be very overwhelming for some people, but a
-                  platform like Hobby Share is able to create a channel for sharing ideas. Most importantly create an online community.
+            <div class="accordion-body">
+              <p> {{ user.username }} you might wanna know our story and the reason behind we started this project is
+                that hobbies can sometimes be difficult to find what is right for you and using <strong>Hobby
+                  Share</strong> as a community will make it easier for you to be introduced to trying something new. Today people
+                are often getting overwhelmed by all sorts of information either from social media, news, or things on daily basis. We want to make it
+                  easier for people to see what is out there and get inspired to start with a new hobby. </p> <br>
+                  <p><strong>Hobby Share</strong> was established in the late 1990s in Manhattan,New York as a brick-and-mortar store. <br> Where book clubs were renting the place and organized
+                    events to share their most trending books with potential customers. A couple of years later the user behavior changed profoundly since the internet became a
+                    powerful source of communication and the market choose organizations like Amazon to get all the introductions of the
+                    best-selling books online as well as able to make a purchase. It made us rethink our business strategy and we wanted to
+                    create something new for our market. That is how we came up with the idea that if people can share their hobbies online it will create
+                    a sense of gathering point. </p><br>
+                  <p>Thus, not only books but interest of any kind is a great place to get to know each other. Today
+                    people are receiving
+                    all sorts of information from social media and other websites that can be very overwhelming for some
+                    people, but a
+                    platform like Hobby Share is able to create a channel for sharing ideas. Most importantly create an
+                    online community.
                 </p</div>
 
             </div>

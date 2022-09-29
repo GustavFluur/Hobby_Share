@@ -1,10 +1,11 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponseForbidden
 from .models import Post
 from .forms import CommentForm, PostForm
 from django.utils.text import slugify
 from django.shortcuts import redirect
+
 
 
 class PostList(generic.ListView):
@@ -158,3 +159,4 @@ class PostDelete(View):
         post.delete()
 
         return HttpResponseRedirect(reverse('home'))
+
