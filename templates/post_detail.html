@@ -7,7 +7,7 @@
             <div class="col-md-6 masthead-text">
                 <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ post.title }}</h1>
-                <!-- Post blogger goes before the | the post's created date goes after -->
+                <!-- Post author goes before the | the post's created date goes after -->
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
@@ -31,67 +31,49 @@
                 <p class="card-text ">
                     {{ post.content | safe }}
                 </p>
-                <!-- LIKE - THUMB UP-->   
-                <div class="row">
+                <div class="container">
+                    <div class="row row-cols-auto">
+                
 
-                    <div class="col">
-                        <strong>
-                            {% if user.is_authenticated %}
-                            <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
-                                {% csrf_token %}
-                                {% if liked %}
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-thumbs-up"></i></button>
+                        <div class="col">
+                            <strong>
+                                {% if user.is_authenticated %}
+                                <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
+                                    {% csrf_token %}
+                                    {% if liked %}
+                                    <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-thumbs-up"></i></button>
+                                    {% else %}
+                                    <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-thumbs-up"></i></button>
+                                    {% endif %}
+                                </form>
                                 {% else %}
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-thumbs-up"></i></button>
+                                <span class="text-secondary"><i class="fas fa-thumbs-up"></i></span>
                                 {% endif %}
-                            </form>
-                            {% else %}
-                            <span class="text-secondary"><i class="fas fa-thumbs-up"></i></span>
-                            {% endif %}
-                        <!-- The number of likes goes before the closing strong tag -->
-                        <span class="text-secondary">{{ post.number_of_likes }} </span>
-                        
-                        </strong>
-                    <!-- DISLIKE - THUMB DOWN--> <!--  Add this later 
-                    <div class="col">
-                        <strong>
-                            {% if user.is_authenticated %}
-                            <form class="d-inline" action="{% url 'post_dislike' post.slug %}" method="POST">
-                                {% csrf_token %}
-                                {% if disliked %}
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fad fa-thumbs-down"></i></button>
-                                {% else %}
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fad fa-thumbs-down"></i></button>
-                                {% endif %}
-                            </form>
-                                {% else %}
-                                <span class="text-secondary"><i class="fad fa-thumbs-down"></i></span>
-                                {% endif %}
-                             The number of likes goes before the closing strong tag 
-                            <span class="text-secondary">{{ post.number_of_dislikes }} </span>
-                            --->  
+                            <!-- The number of likes goes before the closing strong tag -->
+                            <span class="text-secondary">{{ post.number_of_likes }} </span>
                             </strong>
-                    </div>
-                    <div class="col">
-                        {% with comments.count as total_comments %}
-                        <strong class="text-secondary"><i class="far fa-comments"></i>
-                            <!-- Our total_comments variable goes before the closing strong tag -->
-                            {{ total_comments }}</strong>
-                        {% endwith %}
-                    </div>
-                    <div class="col">
-                        {% if user.is_authenticated %}
-                        <strong class="text-secondary"><i class="fas fa-edit"></i>
-                             <!-- If the user wishes to edit/change its post for the better here: -->
-                            <a href="{% url 'edit_post' post.id %}">Edit</a>
-                        
-                    </div>
-                    <div class="col">
-                        
-                        <strong class="text-secondary"><i class="fas fa-trash-alt"></i>
-                             <!-- If the user wishes to delete its post for the better here: -->
-                            <a href="{% url 'delete_post' post.id %}">Delete</a>
-                        {% endif %}
+                        </div>
+                        <div class="col">
+                            {% with comments.count as total_comments %}
+                            <strong class="text-secondary"><i class="far fa-comments"></i>
+                                <!-- Our total_comments variable goes before the closing strong tag -->
+                                {{ total_comments }}</strong>
+                            {% endwith %}
+                        </div>
+                        <div class="col">
+                            {% if user.is_authenticated %}
+                            <strong class="text-secondary"><i class="fas fa-edit"></i>
+                                <!-- If the user wishes to edit/change its post for the better here: -->
+                                <a href="{% url 'edit_post' post.id %}">Edit</a>
+                            
+                        </div>
+                        <div class="col">
+                            
+                            <strong class="text-secondary"><i class="fas fa-trash-alt"></i>
+                                <!-- If the user wishes to delete its post for the better here: -->
+                                <a href="{% url 'delete_post' post.id %}">Delete</a>
+                            {% endif %}
+                        </div>
                     </div>
                 </div>
             </div>

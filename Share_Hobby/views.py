@@ -122,7 +122,7 @@ class CreatePost(View):
         post_form = PostForm(request.POST, request.FILES)
 
         if post_form.is_valid():
-            post_form.instance.blogger = request.user
+            post_form.instance.author = request.user
             post = post_form.save(commit=False)
             post.slug = slugify(post.title)
             post.save()
@@ -148,19 +148,6 @@ class PostLike(View):
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
-# Add this later ==>
-
-#class PostDisLike(View):
-
-#    def post(self, request, slug, *args, **kwargs):
-#        post = get_object_or_404(Post, slug=slug)
-#        if post.dislikes.filter(id=request.user.id).exists():
-#            post.dislikes.remove(request.user)
-#        else:
-#            post.dislikes.add(request.user)
-
-#        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-
 
 class PostDelete(View):
 
@@ -176,8 +163,7 @@ class PostDelete(View):
 
         #return HttpResponseRedirect('/')
 
-# Old backup code: 
-#=================
+
 #def get(self, request, id, *args, **kwargs):
  #       post = get_object_or_404(post.id)
  #       post.delete()
