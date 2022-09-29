@@ -61,7 +61,8 @@
                             {% endwith %}
                         </div>
                         <div class="col">
-                            {% if user.is_authenticated %}
+                    {% if user.is_authenticated %}
+                        {% if user.id ==  post.author.id %}
                             <strong class="text-secondary"><i class="fas fa-edit"></i>
                                 <!-- If the user wishes to edit/change its post for the better here: -->
                                 <a href="{% url 'edit_post' post.id %}">Edit</a>
@@ -72,7 +73,8 @@
                             <strong class="text-secondary"><i class="fas fa-trash-alt"></i>
                                 <!-- If the user wishes to delete its post for the better here: -->
                                 <a href="{% url 'delete_post' post.id %}">Delete</a>
-                            {% endif %}
+                        {% endif %}
+                    {% endif %}
                         </div>
                     </div>
                 </div>
