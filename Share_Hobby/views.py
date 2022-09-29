@@ -16,9 +16,11 @@ class PostList(generic.ListView):
 
 def about(request):
     return render(request, 'about.html')
+    
 
 def contact(request):
     return render(request, 'contact.html')
+
 
 class EditPost(View):
     def get(self, request, id, *args, **kwargs):
