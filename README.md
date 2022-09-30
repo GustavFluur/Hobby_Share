@@ -1,10 +1,12 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Hobby Share
 
-Welcome GustavFluur,
+Hobby Share is a community where people are able and willing to share their interests - or hobbies. It creates a streamline of information for user to create, and interact with various of posts from other hobby enthusiasts. Where all the uploaded news and sharing messages are their for peoples disposal.  
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+
+# Database Schema: 
+
+![Database Diagram](static/readme-images/database_readme.png)
 
 ## Gitpod Reminders
 
