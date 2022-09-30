@@ -2,6 +2,7 @@
 
 Hobby Share is a community where people are able and willing to share their interests - or hobbies. It creates a streamline of information for user to create, and interact with various of posts from other hobby enthusiasts. Where all the uploaded news and sharing messages are their for peoples disposal.  
 
+![Responsitive Image](static/readme-images/readme.main.png)
 
 
 # Database Schema: 
