@@ -9,8 +9,7 @@ About page
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 4px;
-    height: 100%;
-    width: 100%;
+    height: 50px;
     padding: 5%;  
 }
 
@@ -63,8 +62,6 @@ About page
 
 body {
     background-color: #d1d5d5;
-    width: 100%;
-    height: 100%;
 }
 
 .brand {
@@ -133,10 +130,9 @@ body {
     overflow: hidden;
     position: relative;
     display: inline-block;
+    height: 33vh;
     width: 100%;
-    height: 100%;
 }
-
 
 .masthead-text {
     background-color: #445261;
