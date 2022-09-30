@@ -107,6 +107,8 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 
 # Bugs
 
+# 1
+
 #### create_post.html
 
 ##### Error
@@ -118,6 +120,8 @@ The data wasn't registrated from the form and the images wasn't uploaded to the 
     form class="create-post" id="create_post_form" method="post" enctype="multipart/form-data" action="{% url 'create_post' %}"
 
 The issue was resolved by adding the enctype attribute and everything was finally added into the data, which the user was now able to post images related to their blogpost. It was required to have this feature cause without it would create a bad user experience and the purpose of the website wouldn't meet up to its expectations.   
+
+# 2
 
 #### views.py
 
@@ -161,6 +165,20 @@ class CreatePost(View):
         post_form = PostForm(request.POST, request.FILES)
 
 By added request.FILES in the post form it was finally resolved by adding this missing feature. Once something is missing it creates error and thanks to the documentation from the terminal it gave the path of a good result to determine where the bug was. 
+
+# 3
+
+## settings.py
+The user was unable to register a new account due in the settings.py
+
+### First Issue: 
+ACCOUNT_EMAIL_VERIFICATION = False
+
+### First change & failed: 
+ACCOUNT_EMAIL_VERIFICATION = True
+
+### Final and solution: 
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 ##### Another error of the CRUD
 
