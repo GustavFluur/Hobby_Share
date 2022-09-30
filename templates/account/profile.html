@@ -1,0 +1,42 @@
+{% extends 'base.html' %} {% block content %}
+
+{% load i18n %}
+
+<h1>{% if profile %}{{ profile.name }}{% else %}{{ user.username }}{% endif %} Profile</h1>
+
+{% if profile_user.id == user.id and not profile %}
+
+    <a href="{% url 'create_profile' %}">Create Profile</a>
+
+{% elif profile %}
+
+<div>
+    <img src="{{ profile.avatar.url }}">
+
+    <p><strong>Name:</strong> {{ profile.name }}<br>
+        <strong>Bio</strong> {{ profile.bio }} <br>
+        </p>
+
+    {% if user.is_authenticated %}
+        {% if user.id ==  profile_user.id %}
+        <div>
+            <strong class="text-secondary"><i class="fas fa-edit"></i>
+                <!-- If the user wishes to edit/change its post for the better here: -->
+                <a href="{% url 'edit_profile' profile.id %}">Edit</a>
+            </strong>
+        </div>
+        {% endif %}
+    {% endif %}
+        
+</div>
+
+
+
+
+
+
+{% endif %}
+
+
+
+{% endblock content %}

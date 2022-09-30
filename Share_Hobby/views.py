@@ -1,8 +1,8 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect, HttpResponseForbidden
-from .models import Post
-from .forms import CommentForm, PostForm
+from .models import Post, User, Profile
+from .forms import CommentForm, PostForm, ProfileForm
 from django.utils.text import slugify
 from django.shortcuts import redirect
 
@@ -160,3 +160,61 @@ class PostDelete(View):
 
         return HttpResponseRedirect(reverse('home'))
 
+class UserProfile(View):
+    def get(self, request, username, *args, **kwargs):
+        user = get_object_or_404(User, username=username)
+        profile = Profile.objects.filter(user=user).first()
+        return render(request, 'account/profile.html', {"profile_user": user, "profile": profile})
+
+
+class CreateProfile(View):
+    
+    def get(self, request, *args, **kwargs):
+        return render(request, 'account/create_profile.html', {"form":ProfileForm()})
+    
+    def post(self, request, *args, **kwargs):
+
+        profile_form = ProfileForm(request.POST, request.FILES)
+
+        if profile_form.is_valid():
+            profile_form.instance.user = request.user
+            profile = profile_form.save(commit=False)
+            profile.save()
+            return redirect('user_profile', username=profile.user.username)
+
+        return render(
+            request,
+            "account/create_profile.html",
+            {
+                "form": profile_form,
+            },
+        )
+
+class EditProfile(View):
+    def get(self, request, id, *args, **kwargs):
+        profile = get_object_or_404(Profile, id=id)
+        return render( 
+            request,
+            'account/edit_profile.html',
+            {
+                "form": ProfileForm(instance=profile)
+            }
+        )
+
+
+    def post(self, request, id, *args, **kwargs):
+        profile = Profile.objects.get(id=id)
+        profile_form = ProfileForm(request.POST, request.FILES, instance=profile)
+
+        if profile_form.is_valid():
+            
+            profile = profile_form.save(commit=True)
+            return redirect('user_profile', username=profile.user.username)
+
+        return render(
+            request,
+            "account/edit_profile.html",
+            {
+                "form": profile_form,
+            },
+        )

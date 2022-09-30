@@ -54,6 +54,9 @@
                     <li>
                         <a class="nav-link" aria-current="page" href="{% url 'contact' %}">Contact|Support</a>
                     </li>
+                    <li>
+                        <a class="nav-link" aria-current="page" href="{% url 'user_profile' user.username %}">My Profile</a>
+                    </li>
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_login' %}">Login</a>

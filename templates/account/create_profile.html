@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block content %}
+
+{% load i18n %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <h3 class="create-post-title">{% trans "Create Profile" %}</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <p>Logged in as <strong>{{ user.username }}</strong>, please create a profile!</p>
+            <br>   
+            <form class="create-post" id="create_post_form" method="POST" enctype="multipart/form-data" action="{% url 'create_profile' %}">
+                {% csrf_token %}
+                <div class="mb-3"><label for="content">Avatar: </label> {{ form.avatar }} {{ form.errors.avatar }}</div>
+                <div class="mb-4"><label for="title">Name: </label> {{ form.name }} {{ form.errors.name }}</div>
+                <div class="mb-3"><label for="excerpt">Bio: </label> {{ form.bio }}  {{ form.errors.bio }}</div>
+
+                <div>
+                    <button class="btn btn-primary" type="submit">{% trans "Create Profile" %} &raquo;</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
