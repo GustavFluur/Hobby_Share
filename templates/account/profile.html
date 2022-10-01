@@ -2,6 +2,8 @@
 
 {% load i18n %}
 
+<div class="container">
+    
 <h1>{% if profile %}{{ profile.name }}{% else %}{{ user.username }}{% endif %} Profile</h1>
 
 {% if profile_user.id == user.id and not profile %}
@@ -10,7 +12,12 @@
 
 {% elif profile %}
 
-<div>
+</div>
+
+<div class="container">
+    <div class="row">
+        
+    </div>
     <img src="{{ profile.avatar.url }}">
 
     <p><strong>Name:</strong> {{ profile.name }}<br>
