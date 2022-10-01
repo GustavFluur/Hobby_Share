@@ -4,6 +4,16 @@ Hobby Share is a community where people are able and willing to share their hobb
 
 ![Responsitive Image](static/readme-images/readme.main.png)
 
+## Table of Contents
+
++ [Database Diagram](#database-diagram "Database Diagram")
++ [Design Plan](#Design-plan "Design Plan")
+
+
+# User stories: 
+
+Evidence that User stories has been applied into the project (old):
+![UserStories](static/readme-images/userstories.proof.png)
 
 ### Database Schema
 
@@ -73,10 +83,54 @@ All photography for the fictional "posts" from the users, were imported from [To
 Likewise from [Pexels](https://www.pexels.com/). 
 
 
+# Features
+### Existing Features:
 
+Homepage|Uploaded Posts page: 
 
+![Hompage1](static/readme-images/hompage.jpg)
+![Hompage2](static/readme-images/hompeage2.jpg)
 
+Paignation function:
 
+![paignation](static/readme-images/paignation-oage.png)
+
+Navigation Bar:
+
+Desktop: 
+![Navbar](static/readme-images/navbar-desktop.jpg)
+
+*Disclaimer, navbar for the mobile phone was unfortunately failed cause the uploaded posts fall off, and that will be changed for later.
+
+![Navbar-mobile](static/readme-images/navbar.mobile.jpg)
+
+About page: 
+
+About page with closed-Accordion:
+
+![Aboutpage-closed-Accordion](static/readme-images/aboutpage.1.jpg)
+
+About page with open-Accordion:
+
+![Aboutpage-open-Accordion](static/readme-images/aboutpage.full.png)
+
+Create Post:
+![Create_Post](static/readme-images/create_post.png)
+
+Contact|Support Page:
+![Contact|Support Page](static/readme-images/contact%7Csupport.oage.png)
+
+Profile Page:
+
+![Profile Page](static/readme-images/Profile%20Page.png)
+
+Logout Page:
+
+![Logout Page](static/readme-images/Logoutpage.png)
+
+Register Page:
+
+![SignUp](static/readme-images/signup-register.png)
 
 
 #### Bugs Report
