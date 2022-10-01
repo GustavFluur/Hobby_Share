@@ -5,16 +5,41 @@ Hobby Share is a community where people are able and willing to share their hobb
 ![Responsitive Image](static/readme-images/readme.main.png)
 
 
-# Database Schema: 
+### Database Schema
 
 ![Database Diagram](static/readme-images/database_readme.png)
 - [Database diagram was made from the interactive site Creately](https://app.creately.com/d/usBCZwL48oY/edit)
 
----
 
-# Bugs Report
+# Design Plan:
 
-# 1
+The design of the Hobby Share changed along the the way but importantly is the outcome and the functions behind the webpage. 
+
+### Homepage:
+
+The homepage was designed like this because I wanted to create a perfect introdution for the user to feel a sense of welcome once they are visiting the page: 
+
+![Plan Design Homepage](static/readme-images/Plan-Design-homepage.png)
+
+### About page: 
+
+![Plan Design - About](static/readme-images/plan-design-about.png)
+
+### Login Page:
+
+![Plan Design - Log in](static/readme-images/plan-design-sign-in.png)
+
+### BlogPost:
+
+![Plan Design Blogpost](static/readme-images/plan-design-blogpost.png)
+### Color Scheme:
+
+![Color Palette](static/readme-images/color-palette.png)
+
+
+#### Bugs Report
+
+### 1.
 
 ## In the file: create_post.html
 
