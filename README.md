@@ -3,11 +3,13 @@
 Hobby Share is a community where people are able and willing to share their hobbies with others. Likewise it creates a streamline of information for the users to see what categories there are, thus encouraged to feel willing to create, and interact with various of posts from other hobby enthusiasts. Where all the uploaded and inspiring messages are their for peoples disposal. It's a representation of who you are and what interests you represents.  
 
 ![Responsitive Image](static/readme-images/readme.main.png)
+[Live link to the webpage:](https://sharehobbies.herokuapp.com/)
+
+This project is dedicated to all ages who are keen to see what kind of hobbies there are out there, the reason behind this is due to overwhelming information regular internet users are interact with on daily basis. That leds to an overload and people becomes quite depressed and having difficulties to process information out there on the internet spectrum. What Hobby Share is a platform for one category that is the share of your interests or hobbies. It's great for both young and old groups to see what kind of interests there - perhaps they all be interesting to create a sense of community on a digital platform. E.g., as it was during the launch of Facebook or Instagram, there no advertisment and other information that especially children or younger people feeling stressed about. On Hobby Share you don't need to feel stressed at all and the only thing Hobby Share want you do know is to inspire other with our own curosity. 
 
 ## Table of Contents
 
-+ [Database Diagram](#database-diagram "Database Diagram")
-+ [Design Plan](#Design-plan "Design Plan")
+* Disclaimer, there were a lack of time to make a Table of Content. That will be fixed for later, pardon for that inconvience. 
 
 
 # User stories: 
@@ -121,10 +123,41 @@ About page with open-Accordion:
 
 ![Aboutpage-open-Accordion](static/readme-images/aboutpage.full.png)
 
+## CRUD
+
+### Create: 
+
+Only signuped users are able to create posts and profiles at Hobby Share: 
+
 Create Post:
 ![Create_Post](static/readme-images/create_post.png)
+* It's important to click on status button to make published:
 
-Contact|Support Page:
+![Test Post](static/readme-images/testpost.png)
+
+Once you are logged into the page you can only edit & delete your own posts, there are unfortunately no warnings once you decide to remove them. Yet you can create or edit you own posts as much as you want: 
+
+
+
+### EDIT/Update
+
+Once you click on the edit button you come to this page:
+![status-publish](static/readme-images/status-publish.png)
+
+![Edit Post](static/readme-images/EditPost.png)
+
+Once you want to delete a post, you will redirected to the home page or uploaded posts:
+
+Before you have pressed delete button: 
+
+![Delete Post](static/readme-images/beforedelete.png)
+
+After you have pressed delete button:
+
+![After Delete Post](static/readme-images/afterdelete.png)
+
+# Contact|Support Page:
+
 ![Contact|Support Page](static/readme-images/contact%7Csupport.oage.png)
 
 Profile Page:
@@ -272,6 +305,16 @@ All html files were passed by [W3C Validator](https://validator.w3.org/)
 ![Lighthouse-stats](static/readme-images/lighthouse-stat.jpg)
 
 
+# Features Left to Implement
+
+Able to see what a specfic user have uploaded: their previous posts 
+You are able to follow other users:
+Chat with others.
+Password reset
+Register page: select more categories:
+- Nationality
+- Gender
+- Signup page goes align with creating a profile page. 
 
 
 
@@ -286,4 +329,9 @@ All html files were passed by [W3C Validator](https://validator.w3.org/)
 # Acknowledgements:
 
 - Many thanks to my mentor Martina Terlevic who guided me along with this project.
+
+
+
+
+
 
