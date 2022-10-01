@@ -15,23 +15,45 @@ Hobby Share is a community where people are able and willing to share their hobb
 
 The design of the Hobby Share changed along the the way but importantly is the outcome and the functions behind the webpage. 
 
+*Disclaimer my knowledge of Balsamiq was limited for this project when it comes to the true present webpage's design. Many Apologies for that.... Both in the plan and final result of the design. 
+
 ### Homepage:
 
 The homepage was designed like this because I wanted to create a perfect introdution for the user to feel a sense of welcome once they are visiting the page: 
 
 ![Plan Design Homepage](static/readme-images/Plan-Design-homepage.png)
 
+
+### Updated & final design: 
+
+![Updated Design Homepage](static/readme-images/update-homepage.jpg)
+
+
 ### About page: 
 
 ![Plan Design - About](static/readme-images/plan-design-about.png)
+
+In the about page of my design plan I wanted to create a word art where peoples posts coherent with their categories where uploaded here. But some changes where made and I redirected my fokus on wanted to create a regular about page. It became a very one and it could have become better - but it's a representation of what Hobby Share want to signaling with its target audience: 
+
+### Updated & final design: 
+
+![Design - About](static/readme-images/Updated-design-about.jpg)
+
 
 ### Login Page:
 
 ![Plan Design - Log in](static/readme-images/plan-design-sign-in.png)
 
+The log-in page hasn't been updated nor changed when it comes to its design. 
+
 ### BlogPost:
 
 ![Plan Design Blogpost](static/readme-images/plan-design-blogpost.png)
+
+### Updated & final design: 
+
+![Updated Design Blogpost](static/readme-images/Update-BlogPost.jpg)
+
 ### Color Scheme:
 
 ![Color Palette](static/readme-images/color-palette.png)
@@ -149,6 +171,11 @@ class PostDelete(View):
             post.delete()
 
             return HttpResponseRedirect(reverse('home'))
+
+# Test
+
+[Pep8online](http://pep8online.com/) is unfortunately unaccessible at this time, the only source of test I was able to make for this project was look through my terminal or the installed pep8 compliant. 
+![In the termial it shown only 9 problems](static/readme-images/pep8-from-terminal.jpg) but it won't affect the workspace nor the function of the code. Because the characters of the text is too long but it the result is just acting as expected for goal of the project. 
 
 
 
