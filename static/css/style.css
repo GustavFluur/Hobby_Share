@@ -254,3 +254,1034 @@ Create Post page
     text-align: right;
 
 }
+
+/* DESKTOP & LARGE SCREENS */
+@media screen and (max-width:1200px){
+    
+    .about-header{
+        color: #058ef7;
+        font-family: sans-serif;
+        font-style: italic;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 4px;
+        height: 50px;
+        padding: 5%;  
+    }
+    
+    .about-us-short {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        text-align: center;
+        color: #F9FAFC;
+        border-radius: 100%;
+        background: #058ef7;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .about-call-to-action {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        text-align: center;
+        color: #F9FAFC;
+        border-radius: 100%;
+        background: #058ef7;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .who-are-we-p {
+        height: 50px;
+        text-align: center;
+    }
+    .what-we-want-p {
+        height: 50px;
+        text-align: center;
+    }
+    
+    .about-us-section {
+        text-align: center;
+        
+    }
+    
+    .about-us-header {
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 4px;
+        height: 50px;
+        padding: 40px;
+    
+    }
+    
+    
+    body {
+        background-color: #d1d5d5;
+    }
+    
+    .brand {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 5rem;
+        font-weight: 700;
+        color: #058ef7;
+        padding: 1%;
+    }
+    
+    .slogan {
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: left;
+        padding: 1%;
+        text-align: center;
+    }
+    
+    
+    .dark-bg {
+        background-color: #445261;
+    }
+    
+    .main-bg {
+        background-color: #F9FAFC;
+    }
+    
+    .card {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .image-container {
+        position: relative;
+    }
+    
+    .image-flash {
+        position: absolute;
+        bottom: 5%;
+        min-width: 30%;
+        left: -2px;
+        background-color: #e9fa00;
+    }
+    
+    #word-art {
+        border-radius: 50%;
+        box-shadow: 10px 10px 10px 10px;
+        background-color: #058ef7;
+        height: auto;
+        width: auto;
+    
+    }
+    
+    .card-img-top {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .author {
+        color: white;
+        margin: 4px;
+        text-transform: uppercase;
+    }
+    
+    .masthead {
+        margin-top: 10px;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        height: 33vh;
+        width: 100%;
+    }
+    
+    .masthead-text {
+        background-color: #445261;
+        color: white;
+        position: relative;
+    }
+    
+    .masthead-image {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .masthead-image:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 90%;
+        height: 100%;
+        width: 150%;
+        background: #445261;
+        -webkit-transform: skew(15deg);
+        -moz-transform: skew(15deg);
+        transform: skew(15deg);
+        z-index: 100;
+    }
+    
+    .post-link {
+        text-decoration: none;
+        color: #445261;
+    }
+    
+    .post-link:hover,
+    .page-link {
+        color: #058ef7;
+    }
+    
+    .post-title {
+        margin-top: 20%;
+        margin-left: 5%;
+    }
+    
+    .post-subtitle {
+        margin-left: 5%;
+        color: lightgray;
+    }
+    
+    .btn-signup {
+        background-color: #058ef7;
+        color: #fff;
+    }
+    
+    .btn-signup:hover,
+    .btn-signup:active {
+        background-color: #fff;
+        color: #058ef7;
+    }
+    
+    .link {
+        color: #058ef7;
+        text-decoration: none;
+    }
+    
+    .link:hover,
+    .link:active {
+        color: #445261;
+        text-decoration: underline;
+    }
+    
+    .btn-like {
+        color: #020202;
+        border: none;
+        background: transparent;
+    }
+    
+    .btn-like:hover,
+    .btn-like:active {
+        color: #e8e110;
+        background: transparent;
+        border: none;
+    }
+    
+    .navbar-collapse {
+        position: absolute;
+        right: 5rem;
+    }
+    
+    .nav-link {
+        background-color:#058ef7;
+        box-shadow: 10px 10px;
+    }
+    
+    /*===============
+    Create Post page 
+    ===============*/
+    
+    .create-post-title {
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+        border: #058ef7;
+    }
+    
+    .create-post {
+        background-color: #e8e110;
+        box-shadow: 10px 10px 10px 10px;
+        box-sizing: border-box;
+        height: auto;
+        width: auto;
+    }
+    
+    #create_post_form {
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 1%;
+        font-weight: bold;
+    
+    }
+    
+    .create-post-button {
+        text-align: right;
+    
+    }
+}
+
+/* MEDIUM SCREENS: LAPTOPS & TABLETS */
+@media screen and (max-width:950px){
+    .about-header{
+        color: #058ef7;
+        font-family: sans-serif;
+        font-style: italic;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 4px;
+        height: 50px;
+        padding: 5%;  
+    }
+    
+    .about-us-short {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        text-align: center;
+        color: #F9FAFC;
+        border-radius: 100%;
+        background: #058ef7;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .about-call-to-action {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        text-align: center;
+        color: #F9FAFC;
+        border-radius: 100%;
+        background: #058ef7;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .who-are-we-p {
+        height: 50px;
+        text-align: center;
+    }
+    .what-we-want-p {
+        height: 50px;
+        text-align: center;
+    }
+    
+    .about-us-section {
+        text-align: center;
+        
+    }
+    
+    .about-us-header {
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 4px;
+        height: 50px;
+        padding: 40px;
+    
+    }
+    
+    
+    body {
+        background-color: #d1d5d5;
+    }
+    
+    .brand {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 5rem;
+        font-weight: 700;
+        color: #058ef7;
+        padding: 1%;
+    }
+    
+    .slogan {
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: left;
+        padding: 1%;
+        text-align: center;
+    }
+    
+    
+    .dark-bg {
+        background-color: #445261;
+    }
+    
+    .main-bg {
+        background-color: #F9FAFC;
+    }
+    
+    .card {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .image-container {
+        position: relative;
+    }
+    
+    .image-flash {
+        position: absolute;
+        bottom: 5%;
+        min-width: 30%;
+        left: -2px;
+        background-color: #e9fa00;
+    }
+    
+    #word-art {
+        border-radius: 50%;
+        box-shadow: 10px 10px 10px 10px;
+        background-color: #058ef7;
+        height: auto;
+        width: auto;
+    
+    }
+    
+    .card-img-top {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .author {
+        color: white;
+        margin: 4px;
+        text-transform: uppercase;
+    }
+    
+    .masthead {
+        margin-top: 10px;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        height: 33vh;
+        width: 100%;
+    }
+    
+    .masthead-text {
+        background-color: #445261;
+        color: white;
+        position: relative;
+    }
+    
+    .masthead-image {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .masthead-image:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 90%;
+        height: 100%;
+        width: 150%;
+        background: #445261;
+        -webkit-transform: skew(15deg);
+        -moz-transform: skew(15deg);
+        transform: skew(15deg);
+        z-index: 100;
+    }
+    
+    .post-link {
+        text-decoration: none;
+        color: #445261;
+    }
+    
+    .post-link:hover,
+    .page-link {
+        color: #058ef7;
+    }
+    
+    .post-title {
+        margin-top: 20%;
+        margin-left: 5%;
+    }
+    
+    .post-subtitle {
+        margin-left: 5%;
+        color: lightgray;
+    }
+    
+    .btn-signup {
+        background-color: #058ef7;
+        color: #fff;
+    }
+    
+    .btn-signup:hover,
+    .btn-signup:active {
+        background-color: #fff;
+        color: #058ef7;
+    }
+    
+    .link {
+        color: #058ef7;
+        text-decoration: none;
+    }
+    
+    .link:hover,
+    .link:active {
+        color: #445261;
+        text-decoration: underline;
+    }
+    
+    .btn-like {
+        color: #020202;
+        border: none;
+        background: transparent;
+    }
+    
+    .btn-like:hover,
+    .btn-like:active {
+        color: #e8e110;
+        background: transparent;
+        border: none;
+    }
+    
+    .navbar-collapse {
+        position: absolute;
+        right: 5rem;
+    }
+    
+    .nav-link {
+        background-color:#058ef7;
+        box-shadow: 10px 10px;
+    }
+    
+    /*===============
+    Create Post page 
+    ===============*/
+    
+    .create-post-title {
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+        border: #058ef7;
+    }
+    
+    .create-post {
+        background-color: #e8e110;
+        box-shadow: 10px 10px 10px 10px;
+        box-sizing: border-box;
+        height: auto;
+        width: auto;
+    }
+    
+    #create_post_form {
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 1%;
+        font-weight: bold;
+    
+    }
+    
+    .create-post-button {
+        text-align: right;
+    
+    }
+
+
+}
+
+/* IPADS & TABLETS */
+@media screen and (max-width:768px){
+
+    .about-header{
+        color: #058ef7;
+        font-family: sans-serif;
+        font-style: italic;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 4px;
+        height: 50px;
+        padding: 5%;  
+    }
+    
+    .about-us-short {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        text-align: center;
+        color: #F9FAFC;
+        border-radius: 100%;
+        background: #058ef7;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .about-call-to-action {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        text-align: center;
+        color: #F9FAFC;
+        border-radius: 100%;
+        background: #058ef7;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .who-are-we-p {
+        height: 50px;
+        text-align: center;
+    }
+    .what-we-want-p {
+        height: 50px;
+        text-align: center;
+    }
+    
+    .about-us-section {
+        text-align: center;
+        
+    }
+    
+    .about-us-header {
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 4px;
+        height: 50px;
+        padding: 40px;
+    
+    }
+    
+    
+    body {
+        background-color: #d1d5d5;
+    }
+    
+    .brand {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 5rem;
+        font-weight: 700;
+        color: #058ef7;
+        padding: 1%;
+    }
+    
+    .slogan {
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: left;
+        padding: 1%;
+        text-align: center;
+    }
+    
+    
+    .dark-bg {
+        background-color: #445261;
+    }
+    
+    .main-bg {
+        background-color: #F9FAFC;
+    }
+    
+    .card {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .image-container {
+        position: relative;
+    }
+    
+    .image-flash {
+        position: absolute;
+        bottom: 5%;
+        min-width: 30%;
+        left: -2px;
+        background-color: #e9fa00;
+    }
+    
+    #word-art {
+        border-radius: 50%;
+        box-shadow: 10px 10px 10px 10px;
+        background-color: #058ef7;
+        height: auto;
+        width: auto;
+    
+    }
+    
+    .card-img-top {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .author {
+        color: white;
+        margin: 4px;
+        text-transform: uppercase;
+    }
+    
+    .masthead {
+        margin-top: 10px;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        height: 33vh;
+        width: 100%;
+    }
+    
+    .masthead-text {
+        background-color: #445261;
+        color: white;
+        position: relative;
+    }
+    
+    .masthead-image {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .masthead-image:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 90%;
+        height: 100%;
+        width: 150%;
+        background: #445261;
+        -webkit-transform: skew(15deg);
+        -moz-transform: skew(15deg);
+        transform: skew(15deg);
+        z-index: 100;
+    }
+    
+    .post-link {
+        text-decoration: none;
+        color: #445261;
+    }
+    
+    .post-link:hover,
+    .page-link {
+        color: #058ef7;
+    }
+    
+    .post-title {
+        margin-top: 20%;
+        margin-left: 5%;
+    }
+    
+    .post-subtitle {
+        margin-left: 5%;
+        color: lightgray;
+    }
+    
+    .btn-signup {
+        background-color: #058ef7;
+        color: #fff;
+    }
+    
+    .btn-signup:hover,
+    .btn-signup:active {
+        background-color: #fff;
+        color: #058ef7;
+    }
+    
+    .link {
+        color: #058ef7;
+        text-decoration: none;
+    }
+    
+    .link:hover,
+    .link:active {
+        color: #445261;
+        text-decoration: underline;
+    }
+    
+    .btn-like {
+        color: #020202;
+        border: none;
+        background: transparent;
+    }
+    
+    .btn-like:hover,
+    .btn-like:active {
+        color: #e8e110;
+        background: transparent;
+        border: none;
+    }
+    
+    .navbar-collapse {
+        position: absolute;
+        right: 5rem;
+    }
+    
+    .nav-link {
+        background-color:#058ef7;
+        box-shadow: 10px 10px;
+    }
+    
+    /*===============
+    Create Post page 
+    ===============*/
+    
+    .create-post-title {
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+        border: #058ef7;
+    }
+    
+    .create-post {
+        background-color: #e8e110;
+        box-shadow: 10px 10px 10px 10px;
+        box-sizing: border-box;
+        height: auto;
+        width: auto;
+    }
+    
+    #create_post_form {
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 1%;
+        font-weight: bold;
+    
+    }
+    
+    .create-post-button {
+        text-align: right;
+    
+    }
+
+
+}
+
+@media screen and (max-width:480px){
+
+    .about-header{
+        color: #058ef7;
+        font-family: sans-serif;
+        font-style: italic;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 4px;
+        height: 50px;
+        padding: 5%;  
+    }
+    
+    .about-us-short {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        text-align: center;
+        color: #F9FAFC;
+        border-radius: 100%;
+        background: #058ef7;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .about-call-to-action {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        text-align: center;
+        color: #F9FAFC;
+        border-radius: 100%;
+        background: #058ef7;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .who-are-we-p {
+        height: 50px;
+        text-align: center;
+    }
+    .what-we-want-p {
+        height: 50px;
+        text-align: center;
+    }
+    
+    .about-us-section {
+        text-align: center;
+        
+    }
+    
+    .about-us-header {
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 4px;
+        height: 50px;
+        padding: 40px;
+    
+    }
+    
+    
+    body {
+        background-color: #d1d5d5;
+    }
+    
+    .brand {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 5rem;
+        font-weight: 700;
+        color: #058ef7;
+        padding: 1%;
+    }
+    
+    .slogan {
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: left;
+        padding: 1%;
+        text-align: center;
+    }
+    
+    
+    .dark-bg {
+        background-color: #445261;
+    }
+    
+    .main-bg {
+        background-color: #F9FAFC;
+    }
+    
+    .card {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .image-container {
+        position: relative;
+    }
+    
+    .image-flash {
+        position: absolute;
+        bottom: 5%;
+        min-width: 30%;
+        left: -2px;
+        background-color: #e9fa00;
+    }
+    
+    #word-art {
+        border-radius: 50%;
+        box-shadow: 10px 10px 10px 10px;
+        background-color: #058ef7;
+        height: auto;
+        width: auto;
+    
+    }
+    
+    .card-img-top {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .author {
+        color: white;
+        margin: 4px;
+        text-transform: uppercase;
+    }
+    
+    .masthead {
+        margin-top: 10px;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        height: 33vh;
+        width: 100%;
+    }
+    
+    .masthead-text {
+        background-color: #445261;
+        color: white;
+        position: relative;
+    }
+    
+    .masthead-image {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .masthead-image:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 90%;
+        height: 100%;
+        width: 150%;
+        background: #445261;
+        -webkit-transform: skew(15deg);
+        -moz-transform: skew(15deg);
+        transform: skew(15deg);
+        z-index: 100;
+    }
+    
+    .post-link {
+        text-decoration: none;
+        color: #445261;
+    }
+    
+    .post-link:hover,
+    .page-link {
+        color: #058ef7;
+    }
+    
+    .post-title {
+        margin-top: 20%;
+        margin-left: 5%;
+    }
+    
+    .post-subtitle {
+        margin-left: 5%;
+        color: lightgray;
+    }
+    
+    .btn-signup {
+        background-color: #058ef7;
+        color: #fff;
+    }
+    
+    .btn-signup:hover,
+    .btn-signup:active {
+        background-color: #fff;
+        color: #058ef7;
+    }
+    
+    .link {
+        color: #058ef7;
+        text-decoration: none;
+    }
+    
+    .link:hover,
+    .link:active {
+        color: #445261;
+        text-decoration: underline;
+    }
+    
+    .btn-like {
+        color: #020202;
+        border: none;
+        background: transparent;
+    }
+    
+    .btn-like:hover,
+    .btn-like:active {
+        color: #e8e110;
+        background: transparent;
+        border: none;
+    }
+    
+    .navbar-collapse {
+        position: absolute;
+        right: 5rem;
+    }
+    
+    .nav-link {
+        background-color:#058ef7;
+        box-shadow: 10px 10px;
+    }
+    
+    /*===============
+    Create Post page 
+    ===============*/
+    
+    .create-post-title {
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+        border: #058ef7;
+    }
+    
+    .create-post {
+        background-color: #e8e110;
+        box-shadow: 10px 10px 10px 10px;
+        box-sizing: border-box;
+        height: auto;
+        width: auto;
+    }
+    
+    #create_post_form {
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 1%;
+        font-weight: bold;
+    
+    }
+    
+    .create-post-button {
+        text-align: right;
+    
+    }
+
+}
