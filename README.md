@@ -58,6 +58,26 @@ The log-in page hasn't been updated nor changed when it comes to its design.
 
 ![Color Palette](static/readme-images/color-palette.png)
 
+# Typography:
+All fonts were obtained from the Google font & Bootstrap. I chose the following fonts for the page:
+
+[Bootstrap](https://getbootstrap.com/docs/5.0/content/typography/) & 'Times New Roman', Times, serif: 
+
+- heading/logo, Blog & print titles
+- navigation & site buttons [w3schools](https://www.w3schools.com/css/css3_shadows_box.asp)
+
+# Imagery:
+
+All photography for the fictional "posts" from the users, were imported from [Tomi Tokko](https://github.com/tomitokko/django-social-media-website) with [freecodecamp](https://www.freecodecamp.org/) free course on [youtube](https://www.youtube.com/watch?v=xSUm6iMtREA).
+
+Likewise from [Pexels](https://www.pexels.com/). 
+
+
+
+
+
+
+
 
 #### Bugs Report
 
@@ -172,10 +192,24 @@ class PostDelete(View):
 
             return HttpResponseRedirect(reverse('home'))
 
-# Test
+# Validator Test
 
-[Pep8online](http://pep8online.com/) is unfortunately unaccessible at this time, the only source of test I was able to make for this project was look through my terminal or the installed pep8 compliant. 
-![In the termial it shown only 9 problems](static/readme-images/pep8-from-terminal.jpg) but it won't affect the workspace nor the function of the code. Because the characters of the text is too long but it the result is just acting as expected for goal of the project. 
+- [Pep8online](http://pep8online.com/) is unfortunately unaccessible at this time, the only source of test I was able to make for this project was look through my terminal or the installed pep8 compliant. (Directed from the Tut support)
+
+- ![In the termial it shown only 9 problems](static/readme-images/pep8-from-terminal.jpg) but it won't affect the workspace nor the function of the code. Because the characters of the text is too long but it the final result is acting as expected, therefore reach up to its goal of this project. 
+
+All html files were passed by [W3C Validator](https://validator.w3.org/)
+
+- Errors that were discovered were the {%%} & {{}} tags. Those are required to make the webpage work. As well as other errors that won't hurt the projects main objective, e.g. "Non-space characters found without seeing a doctype first. Expected". These can be changed but the outcome to make the page work with all its functions is the main goal here. 
+
+- CSS file didn't detect any errors either in [Jigsaw validator](https://jigsaw.w3.org/css-validator/), since I am Swedish and Jigsaw seems to only show messages on my language at this time - (don't know how to change it) - I swear it says that no error are shown in the css file: 
+
+![JigSaw-Validator-image](static/readme-images/Jigsaw%20validator-swedish.jpg)
+
+* Hobby Share was demonstraded and portrayed these stats in Lighthouse:
+
+![Lighthouse-stats](static/readme-images/lighthouse-stat.jpg)
+
 
 
 

@@ -1038,8 +1038,8 @@ Create Post page
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
         letter-spacing: 4px;
-        height: 50px;
-        padding: 5%;  
+        height: 100%;
+        padding: 100%;  
     }
     
     .about-us-short {
@@ -1091,6 +1091,8 @@ Create Post page
     
     body {
         background-color: #d1d5d5;
+        width: 100%;
+        height: 100%;
     }
     
     .brand {
@@ -1106,7 +1108,8 @@ Create Post page
         font-family: 'Times New Roman', Times, serif;
         text-align: left;
         padding: 1%;
-        text-align: center;
+        width: 100%;
+        height: 100%;
     }
     
     
@@ -1125,6 +1128,8 @@ Create Post page
     
     .image-container {
         position: relative;
+        width: 100%;
+        height: 100%;
     }
     
     .image-flash {
@@ -1139,8 +1144,8 @@ Create Post page
         border-radius: 50%;
         box-shadow: 10px 10px 10px 10px;
         background-color: #058ef7;
-        height: auto;
-        width: auto;
+        width: 100%;
+        height: 100%;
     
     }
     
@@ -1159,8 +1164,8 @@ Create Post page
         overflow: hidden;
         position: relative;
         display: inline-block;
-        height: 33vh;
         width: 100%;
+        height: 100%;
     }
     
     .masthead-text {
@@ -1172,6 +1177,8 @@ Create Post page
     .masthead-image {
         position: relative;
         overflow: hidden;
+        width: 100%;
+        height: 100%;
     }
     
     .masthead-image:after {
@@ -1244,8 +1251,8 @@ Create Post page
     }
     
     .navbar-collapse {
-        position: absolute;
-        right: 5rem;
+        width: 100%;
+        height: 100%;
     }
     
     .nav-link {
