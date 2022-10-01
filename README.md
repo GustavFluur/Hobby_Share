@@ -82,6 +82,13 @@ All photography for the fictional "posts" from the users, were imported from [To
 
 Likewise from [Pexels](https://www.pexels.com/). 
 
+# Media 
+
+- [Pexels](https://www.pexels.com/)
+- [Main Photo](https://images.pexels.com/photos/5973966/pexels-photo-5973966.jpeg?auto=compress&cs=tinysrgb&w=1600)
+- [Blog1 Post](https://images.pexels.com/photos/5644638/pexels-photo-5644638.jpeg?auto=compress&cs=tinysrgb&w=1600)
+- [Blog2 Post](https://images.pexels.com/photos/1040157/pexels-photo-1040157.jpeg?auto=compress&cs=tinysrgb&w=1600)
+
 
 # Features
 ### Existing Features:
@@ -276,9 +283,7 @@ All html files were passed by [W3C Validator](https://validator.w3.org/)
 - [Build a Social Media App with Django – Python Web Framework Tutorial](https://www.youtube.com/watch?v=xSUm6iMtREA)
 - [Codemy.com -Create A Simple Django Blog ](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi)
 
-# Media 
+# Acknowledgements:
 
-- [Pexels](https://www.pexels.com/)
-- [Main Photo](https://images.pexels.com/photos/5973966/pexels-photo-5973966.jpeg?auto=compress&cs=tinysrgb&w=1600)
-- [Blog1 Post](https://images.pexels.com/photos/5644638/pexels-photo-5644638.jpeg?auto=compress&cs=tinysrgb&w=1600)
-- [Blog2 Post](https://images.pexels.com/photos/1040157/pexels-photo-1040157.jpeg?auto=compress&cs=tinysrgb&w=1600)
+- Many thanks to my mentor Martina Terlevic who guided me along with this project.
+
