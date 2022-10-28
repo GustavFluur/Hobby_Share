@@ -5,7 +5,7 @@ Hobby Share is a community where people are able and willing to share their hobb
 ![Responsitive Image](static/readme-images/readme.main.png)
 [Live link to the webpage:](https://sharehobbies.herokuapp.com/)
 
-This project is dedicated to all ages who are keen to see what kind of hobbies there are out there, the reason behind this is due to overwhelming information regular internet users are interact with on daily basis. That leds to an overload and people becomes quite depressed and having difficulties to process information out there on the internet spectrum. What Hobby Share is a platform for one category that is the share of your interests or hobbies. It's great for both young and old groups to see what kind of interests there - perhaps they all be interesting to create a sense of community on a digital platform. E.g., as it was during the launch of Facebook or Instagram, there no advertisment and other information that especially children or younger people feeling stressed about. On Hobby Share you don't need to feel stressed at all and the only thing Hobby Share want you do know is to inspire other with our own curosity. 
+This project is dedicated to all ages who are keen to see what kind of hobbies there are out there, the reason behind this is due to overwhelming information regular internet users are interact with on daily basis. That leads to an overload and people becomes quite depressed and having difficulties to process information out there on the internet spectrum. What Hobby Share is a platform for one category that is the share of your interests or hobbies. It's great for both young and old groups to see what kind of interests there - perhaps they all be interesting to create a sense of community on a digital platform. E.g., as it was during the launch of Facebook or Instagram, there no advertisement and other information that especially children or younger people feeling stressed about. On Hobby Share you don't need to feel stressed at all and the only thing Hobby Share want you do know is to inspire other with our own curiosity. 
 
 ## Table of Contents
 
@@ -45,7 +45,7 @@ The homepage was designed like this because I wanted to create a perfect introdu
 
 ![Plan Design - About](static/readme-images/plan-design-about.png)
 
-In the about page of my design plan I wanted to create a word art where peoples posts coherent with their categories where uploaded here. But some changes where made and I redirected my fokus on wanted to create a regular about page. It became a very one and it could have become better - but it's a representation of what Hobby Share want to signaling with its target audience: 
+In the about page of my design plan I wanted to create a word art where peoples posts coherent with their categories where uploaded here. But some changes where made and I redirected my focus on wanted to create a regular about page. It became a very one and it could have become better - but it's a representation of what Hobby Share want to signaling with its target audience: 
 
 ### Updated & final design: 
 
@@ -123,7 +123,7 @@ About page with open-Accordion:
 
 ![Aboutpage-open-Accordion](static/readme-images/aboutpage.full.png)
 
-## CRUD
+# CRUD: Create, Read, Update and Delete
 
 ### Create: 
 
@@ -173,7 +173,7 @@ Register Page:
 ![SignUp](static/readme-images/signup-register.png)
 
 
-#### Bugs Report
+# Bugs Report
 
 ### 1.
 
@@ -304,6 +304,48 @@ All html files were passed by [W3C Validator](https://validator.w3.org/)
 
 ![Lighthouse-stats](static/readme-images/lighthouse-stat.jpg)
 
+# Technologies Used
+
+### Main Languages Used
+- HTML5
+- CSS3
+- Javascript
+- Python
+- Django
+- SQL - Postgres
+
+### Frameworks, Libraries & Programs Used
+- Google Fonts - for the font families:
+- Font Awesome - to add icons to the social links in the footer element.
+- GitPod - to create my html files & styling sheet before pushing the project to Github.
+- GitHub - to store my repository for submission.
+- Balsamiq - were used to create mockups of the project prior to starting.
+- Am I Responsive? - to ensure the project looked good across all devices.
+- Favicon - to provide the code & image for the icon in the tab bar.
+- [Django](https://www.djangoproject.com/)
+- [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- [Database Design Tool | Creately](https://creately.com/diagram-type/database-design/)
+
+# Installed Packages:
+
+#### One you install all the packages you need to use "pip3 install" and please follow all the steps below:   
+#
+
+1. pip3 install 'django<4' gunicorn
+
+2. pip3 install dj_database_url psycopg2 [More info:](https://pypi.org/project/dj-database-url/)
+
+3. pip3 install dj3-cloudinary-storage [More info:](https://pypi.org/project/dj3-cloudinary-storage/)
+
+4. pip install django-allauth [More info:](https://django-allauth.readthedocs.io/en/latest/installation.html)
+
+5. pip install django-summernote [More info:](https://summernote.org/) 
+
+6. pip install django-crispy-forms [More info:](https://django-crispy-forms.readthedocs.io/en/latest/index.html)
+
+7. pip install Pillow [More info:](https://pypi.org/project/Pillow/)
+
+
 
 # Features Left to Implement
 
@@ -314,7 +356,8 @@ Password reset
 Register page: select more categories:
 - Nationality
 - Gender
-- Signup page goes align with creating a profile page. 
+- Signup page goes align with creating a profile page.
+- Structurized design regards to the about and profile page.  
 
 
 
