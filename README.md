@@ -137,6 +137,8 @@ Create Post:
 
 Once you are logged into the page you can only edit & delete your own posts, there are unfortunately no warnings once you decide to remove them. Yet you can create or edit you own posts as much as you want: 
 
+### READ
+
 
 
 ### EDIT/Update
@@ -175,7 +177,27 @@ Register Page:
 
 # Bugs Report
 
-### 1.
+# 1.
+
+A common mistake is to type the right commands in the terminal and have the files in the project. That mistake can be done easily once you are typing all the commands into the terminal that is necessary for making the website work. 
+
+### The message you receive in the terminal : 
+    django.core.exceptions.ImproperlyConfigured: In order to use cloudinary storage, you need to provide CLOUDINARY_STORAGE dictionary with CLOUD_NAME, API_SECRET and API_KEY in the settings or set CLOUDINARY_URL variable (or CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET variables).
+
+### If you lose the workspace on gitpod it can sometimes be very problematic since you need to restart the working process and adding all the important elements, files, imports etc. into the workspace all over again.
+
+### In the env.py file (which is secret for non-authorized developers can't access to) must add these into the file:
+
+        import os
+
+        os.environ["envpy_test"] = 'envpy'
+        os.environ["DATABASE_URL"] = "postgres://################################################################"
+        os.environ["SECRET_KEY"] = "##############################"
+        os.environ["CLOUDINARY_URL"] = "cloudinary://####################################"
+
+The env.py file wasn't added into this workspace thus the error emerged. Besides I used wrong command and missed "runserver" => python3 manage.py runserver.
+
+# 2.
 
 ## In the file: create_post.html
 
@@ -189,7 +211,7 @@ The data wasn't registrated from the form and the images wasn't uploaded to the 
 
 The issue was resolved by adding the enctype attribute and everything was finally added into the data, which the user was now able to post images related to their blogpost. It was required to have this feature cause without it would create a bad user experience and the purpose of the website wouldn't meet up to its expectations.   
 
-# 2
+# 3.
 
 #### views.py
 
@@ -234,7 +256,7 @@ class CreatePost(View):
 
 By added request.FILES in the post form it was finally resolved by adding this missing feature. Once something is missing it creates error and thanks to the documentation from the terminal it gave the path of a good result to determine where the bug was. 
 
-# 3
+# 4.
 
 
 In the register page of the Hobby Share, it created an error due some issues regards to the settings.py file and that led to some errors along the way of project's process:
@@ -325,6 +347,55 @@ All html files were passed by [W3C Validator](https://validator.w3.org/)
 - [Django](https://www.djangoproject.com/)
 - [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - [Database Design Tool | Creately](https://creately.com/diagram-type/database-design/)
+
+
+# Deployment
+### The site was deployed to Heroku. The steps to deploy are as follows:
+
+# GitHub|GitPod Terminal
+
+- Install Django & Gunicorn: pip3 install 'django<4' gunicorn
+- Install Django database & psycopg: pip3 install dj_database_url psycopg2
+- Install Cloudinary: pip3 install dj3-cloudinary-storage
+- Creating the requirements.txt file with the following command: pip3 freeze --local > requirements.txt
+    a django project was created using: django-admin startproject printstatements .
+    the blog app was then created with: python3 manage.py startapp blog
+    which was then added to the settings.py file within our project directory.
+- The changes were then migrated using: python3 manage.py migrate
+
+# Heroku part 1
+
+- Heroku & created a new app called Share_Hobby added the Heroku Postgres database to the Resources tab.
+
+The Settings Tab, to add the following key/value pairs to the configvars:
+key: SECRET_KEY | value: randomkey
+key: PORT | value: 8000
+key: CLOUDINARY_URL | value: API environment variable
+key: DATABASE_URL | value: value supplied by Heroku
+
+# GitPod: env.py file
+
+1. added the DATABASE_URL, SECRET_KEY & CLOUDINARY_URL to the env.py file
+
+2. added the DATABASE_URL, SECRET_KEY & CLOUDINARY_URL to the settings.py file
+
+3. add an import os statement for the env.py file.
+
+4. added Heroku to the ALLOWED_HOSTS in settings.py
+
+# Procfile
+
+created the Procfile
+
+pushed the project to Github
+
+# Heruko part 2
+
+connected my github account to Heroku through the Deploy tab
+
+connected my github project repository, and then clicked on the "Deploy" button
+
+The live link for "Hobby Share" can be found HERE
 
 # Installed Packages:
 
