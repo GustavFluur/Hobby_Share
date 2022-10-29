@@ -14,8 +14,43 @@ This project is dedicated to all ages who are keen to see what kind of hobbies t
 
 # User stories: 
 
-Evidence that User stories has been applied into the project (old):
-![UserStories](static/readme-images/userstories.proof.png)
+User Stories
+Not all stories have been implemented. Some have been left for future implementations as the site grows and expands.
+
+# Admin stories:
+### As an admin:
+1. I can submit new blog posts so that I can inform site visitors & bloggers of new events, bloggers, and more.
+Story points: 3
+2. I can moderate blog comments so that the feedback provided is appropriate.
+Story points: 1
+I can create a log in / sign up page so that artists and visitors can sign up to the site.
+3. Story points: 2
+# Blogger stories:
+### As an blogger:
+1. I can create a user profile so that I can be found & viewed on the site.
+- Story points: 3
+2. I can upload artwork so that I can share it with art enthusiasts.
+- Story points: 5
+3. I can select a medium, and print size so that I can have the work printed.
+- Story points: 1
+4. I can choose how many prints I would like so that my work is sold as a limited edition run.
+- Story points: 1
+5- I can set a price so that I can sell my work.
+- Story points: 1
+# Visitor stories:
+### As a visitor:
+1. I can visit the blog so that I can see what is new.
+- Story points: 5
+2. I can comment on blog posts so that I can give my feedback.
+- Story points: 2
+3. I can like blog posts so that I can easily share my enthusiasm.
+- Story points: 1
+4. I can peruse the gallery so that I can discover new bloggers, and new artworks by bloggers I already know.
+- Story points: 5
+5. I can follow bloggers so that I can be updated when new work is released.
+- Story points: 3
+6. I can like an bloggers so that I can show my appreciation.
+- Story points: 2
 
 ### Database Schema
 
