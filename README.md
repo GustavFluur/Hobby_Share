@@ -25,6 +25,8 @@ Not all stories have been implemented. Some have been left for future implementa
 - Story points: 2
 3. I can create a log in / sign up page so that potential users can sign up to the site.
 - Story points: 1
+4. I must be accessible for the users to reach out to me in case of problems|issues. 
+- Story points: 1
 ## Blogger stories:
 ### As an blogger:
 1. I can create a user profile so that I can be found & viewed on the site.
