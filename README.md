@@ -17,42 +17,43 @@ This project is dedicated to all ages who are keen to see what kind of hobbies t
 User Stories
 Not all stories have been implemented. Some have been left for future implementations as the site grows and expands.
 
-# Admin stories:
+## Admin stories:
 ### As an admin:
-1. I can submit new blog posts so that I can inform site visitors & bloggers of new events, bloggers, and more.
-Story points: 3
-2. I can moderate blog comments so that the feedback provided is appropriate.
-Story points: 1
-I can create a log in / sign up page so that artists and visitors can sign up to the site.
-3. Story points: 2
-# Blogger stories:
+1. I can create blog post, delete comments, users and look through all the uploads etc. 
+- Story points: 3
+2. I cannot grant a blog comment. 
+- Story points: 2
+3. I can create a log in / sign up page so that potential users can sign up to the site.
+- Story points: 1
+## Blogger stories:
 ### As an blogger:
 1. I can create a user profile so that I can be found & viewed on the site.
-- Story points: 3
-2. I can upload artwork so that I can share it with art enthusiasts.
-- Story points: 5
-3. I can select a medium, and print size so that I can have the work printed.
+- Story points: 2
+2. I can upload blog posts so that I can share it with hobby enthusiasts.
+- Story points: 4
+3. I can create a post of my interest, comment and like an other user's post.
 - Story points: 1
-4. I can choose how many prints I would like so that my work is sold as a limited edition run.
+4. I can post, edit and delete my blog uploads.
 - Story points: 1
-5- I can set a price so that I can sell my work.
+5. I can add an image, write a bio and edit my profile.
 - Story points: 1
-# Visitor stories:
+6. I can easily orientate and contact the admin if any issues|problems emerges.
+- Story points: 4
+
+## Visitor stories:
 ### As a visitor:
 1. I can visit the blog so that I can see what is new.
-- Story points: 5
-2. I can comment on blog posts so that I can give my feedback.
-- Story points: 2
-3. I can like blog posts so that I can easily share my enthusiasm.
 - Story points: 1
-4. I can peruse the gallery so that I can discover new bloggers, and new artworks by bloggers I already know.
-- Story points: 5
-5. I can follow bloggers so that I can be updated when new work is released.
-- Story points: 3
-6. I can like an bloggers so that I can show my appreciation.
+2. I can look see the topic and read the posts.
 - Story points: 2
+3. I can visit a blogger's profile site and read its bio.
+- Story points: 2
+4. I can orientate myself to the about page to see the purpose of website.
+- Story points: 4
+5. I can easily register myself to website, thus start blogging and sharing with others. 
+- Story points: 1
 
-### Database Schema
+# Database Schema
 
 ![Database Diagram](static/readme-images/database_readme.png)
 - [Database diagram was made from the interactive site Creately](https://app.creately.com/d/usBCZwL48oY/edit)
