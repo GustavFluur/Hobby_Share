@@ -11,6 +11,40 @@ This project is dedicated to all ages who are keen to see what kind of hobbies t
 
 * Disclaimer, there were a lack of time to make a Table of Content. That will be fixed for later, pardon for that inconvience. 
 
+1. [User stories](#user-stories)
+
+2. [Database Schema](#database-schema)
+
+3. [Design Plan](#design-plan)
+
+4. [Color Scheme](#color-scheme)
+
+5. [Typography](#typography)
+
+6. [Imagery](#imagery)
+
+7. [Media](#media)
+
+8. [Features](#features)
+
+9. [CRUD: Create, Read, Update and Delete](#crud-create-read-update-and-delete)
+
+10. [Bugs Report](#bugs-report)
+
+11. [Validator Test](#validator-test)
+
+12. [Technologies Used](#technologies-used)
+
+13. [Deployment](#deployment)
+
+14. [Installed Packages](#installed-packages)
+
+15. [Features Left to Implement](#features-left-to-implement)
+
+16. [Credits](#credits)
+
+17. [Credits to my mentor](#credits-to-my-mentor)
+
 
 # User stories: 
 
@@ -67,7 +101,7 @@ The design of the Hobby Share changed along the the way but importantly is the o
 
 *Disclaimer my knowledge of Balsamiq was limited for this project when it comes to the true present webpage's design. Many Apologies for that.... Both in the plan and final result of the design. 
 
-### Homepage:
+## Homepage:
 
 The homepage was designed like this because I wanted to create a perfect introdution for the user to feel a sense of welcome once they are visiting the page: 
 
@@ -163,7 +197,7 @@ About page with open-Accordion:
 
 # CRUD: Create, Read, Update and Delete
 
-### Create: 
+## Create: 
 
 Only signuped users are able to create posts and profiles at Hobby Share: 
 
@@ -175,11 +209,30 @@ Create Post:
 
 Once you are logged into the page you can only edit & delete your own posts, there are unfortunately no warnings once you decide to remove them. Yet you can create or edit you own posts as much as you want: 
 
-### READ
+## READ
 
+- Both visitors & logged-in members are able to orientate themselves across the website.
 
+![read1](static/readme-images/read.1.png)
 
-### EDIT/Update
+- Once you select an article of your interest e.g. "6 Reasons Why Hunting Can Be A Great Hobby to Take Up"
+
+![read2](static/readme-images/read.2.png)
+ 
+
+![read.blogpost1](static/readme-images/read.blogpost.1.png)
+![read.blogpost2](static/readme-images/read.blogpost.2.png)
+- You are able to read the whole blog post and see the whole content what the blogger has created. In this example it has been taking from how it is on a desktop.
+
+![read.blogpost3](static/readme-images/read.blogpost.3.png)
+
+- However, in this example above it being presented of a user who is logged in to Hobby Share. You are unable to comment, edit and delete the post until you register yourself to the website. 
+
+- Please look at the example below: 
+
+![read.no-comment](static/readme-images/read.no-comment.png)
+
+## EDIT/Update
 
 Once you click on the edit button you come to this page:
 ![status-publish](static/readme-images/status-publish.png)
@@ -196,7 +249,7 @@ After you have pressed delete button:
 
 ![After Delete Post](static/readme-images/afterdelete.png)
 
-# Contact|Support Page:
+## Contact|Support Page:
 
 ![Contact|Support Page](static/readme-images/contact%7Csupport.oage.png)
 
@@ -376,15 +429,16 @@ All html files were passed by [W3C Validator](https://validator.w3.org/)
 
 ### Frameworks, Libraries & Programs Used
 - Google Fonts - for the font families:
-- Font Awesome - to add icons to the social links in the footer element.
+- [Font Awesome](https://fontawesome.com/icons) - to add icons to the social links in the footer element.
 - GitPod - to create my html files & styling sheet before pushing the project to Github.
 - GitHub - to store my repository for submission.
-- Balsamiq - were used to create mockups of the project prior to starting.
-- Am I Responsive? - to ensure the project looked good across all devices.
-- Favicon - to provide the code & image for the icon in the tab bar.
+- [Balsamiq](https://balsamiq.com/) - were used to create mockups of the project prior to starting.
+- [Am I Responsive?](https://ui.dev/amiresponsive) - to ensure the project looked good across all devices.
+- [Favicon](https://icons8.com/icons/set/lightbulb) - to provide the code & image for the icon in the tab bar.
 - [Django](https://www.djangoproject.com/)
 - [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - [Database Design Tool | Creately](https://creately.com/diagram-type/database-design/)
+- Preview (macOS) was used for this README.md file and its design features for images only 
 
 
 # Deployment
@@ -437,7 +491,7 @@ The live link for "Hobby Share" can be found HERE
 
 # Installed Packages:
 
-#### One you install all the packages you need to use "pip3 install" and please follow all the steps below:   
+#### One you install all the packages on the terminal you need to use "pip3 install" and please follow all the steps below:   
 #
 
 1. pip3 install 'django<4' gunicorn
@@ -458,11 +512,24 @@ The live link for "Hobby Share" can be found HERE
 
 # Features Left to Implement
 
-Able to see what a specfic user have uploaded: their previous posts 
-You are able to follow other users:
-Chat with others.
-Password reset
-Register page: select more categories:
+## Home page:
+### Users will be able to:
+
+- search hobbies from a search bar.
+- use tags.
+- see what is trending.  
+
+## Profile page:
+### Users will be able to:
+
+- chat, follow - and unfollow others.
+- see how many followers and posts you a user has on its profile.
+- see on a user's profile page which uploaded posts are related to them.
+- delete their profile.
+
+## Register page: 
+### select more categories:
+
 - Nationality
 - Gender
 - Signup page goes align with creating a profile page.
@@ -478,9 +545,11 @@ Register page: select more categories:
 - [Build a Social Media App with Django – Python Web Framework Tutorial](https://www.youtube.com/watch?v=xSUm6iMtREA)
 - [Codemy.com -Create A Simple Django Blog ](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi)
 
-# Acknowledgements:
 
-- Many thanks to my mentor Martina Terlevic who guided me along with this project.
+# Credits to my mentor
+I want to thank my mentor on Code Institute, who guide me to build a new and structured Codeblock. Without her support, advice and inspiration it would have been much harder to understand what I missed:
+
+- Martina Terlevic
 
 
 
