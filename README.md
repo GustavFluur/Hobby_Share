@@ -442,7 +442,7 @@ All html files were passed by [W3C Validator](https://validator.w3.org/)
 
 
 # Deployment
-### The site was deployed to Heroku. The steps to deploy are as follows:
+### The site was deployed to Heruko. The steps to deploy are as follows:
 
 # GitHub|GitPod Terminal
 
