@@ -83,7 +83,7 @@ Not all stories have been implemented. Some have been left for future implementa
 - Story points: 2
 3. I can visit a blogger's profile site and read its bio.
 - Story points: 2
-4. I can orientate myself to the about page to see the purpose of website.
+4. I can orientate myself to the about page to see the purpose of the website.
 - Story points: 4
 5. I can easily register myself to website, thus start blogging and sharing with others. 
 - Story points: 1
