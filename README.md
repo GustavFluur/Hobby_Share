@@ -442,7 +442,7 @@ All html files were passed by [W3C Validator](https://validator.w3.org/)
 
 
 # Deployment
-### The site was deployed to Heruko. The steps to deploy are as follows:
+### The site was deployed to Heroku. The steps to deploy are as follows:
 
 # GitHub|GitPod Terminal
 
@@ -463,7 +463,7 @@ The Settings Tab, to add the following key/value pairs to the configvars:
 key: SECRET_KEY | value: randomkey
 key: PORT | value: 8000
 key: CLOUDINARY_URL | value: API environment variable
-key: DATABASE_URL | value: value supplied by Heroku
+key: DATABASE_URL | value: value supplied by Heruko
 
 # GitPod: env.py file
 
@@ -473,7 +473,7 @@ key: DATABASE_URL | value: value supplied by Heroku
 
 3. add an import os statement for the env.py file.
 
-4. added Heroku to the ALLOWED_HOSTS in settings.py
+4. added Heruko to the ALLOWED_HOSTS in settings.py
 
 # Procfile
 
@@ -481,9 +481,9 @@ created the Procfile
 
 pushed the project to Github
 
-# Heruko part 2
+# Heroku part 2
 
-connected my github account to Heroku through the Deploy tab
+connected my github account to Heruko through the Deploy tab
 
 connected my github project repository, and then clicked on the "Deploy" button
 
