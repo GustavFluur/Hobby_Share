@@ -9,7 +9,6 @@ This project is dedicated to all ages who are keen to see what kind of hobbies t
 
 ## Table of Contents
 
-* Disclaimer, there were a lack of time to make a Table of Content. That will be fixed for later, pardon for that inconvience. 
 
 1. [User stories](#user-stories)
 
