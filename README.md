@@ -546,7 +546,8 @@ The live link for "Hobby Share" can be found HERE
 
 
 # Credits to my mentor
-I want to thank my mentor on Code Institute, who guide me to build a new and structured Codeblock. Without her support, advice and inspiration it would have been much harder to understand what I missed:
+
+I want to show my gratitude to my mentor on Code Institute, who guided me for this project.
 
 - Martina Terlevic
 
