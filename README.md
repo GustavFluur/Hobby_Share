@@ -427,7 +427,6 @@ All html files were passed by [W3C Validator](https://validator.w3.org/)
 - SQL - Postgres
 
 ### Frameworks, Libraries & Programs Used
-- Google Fonts - for the font families:
 - [Font Awesome](https://fontawesome.com/icons) - to add icons to the social links in the footer element.
 - GitPod - to create my html files & styling sheet before pushing the project to Github.
 - GitHub - to store my repository for submission.
