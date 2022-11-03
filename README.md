@@ -175,16 +175,28 @@ Paignation function:
 
 ![paignation](static/readme-images/paignation-oage.png)
 
-Navigation Bar:
+## Navigation Bar:
 
 Desktop: 
 ![Navbar](static/readme-images/navbar-desktop.jpg)
 
-*Disclaimer, navbar for the mobile phone was unfortunately failed cause the uploaded posts fall off, and that will be changed for later.
+*Disclaimer, navbar for the mobile phone was failed cause the uploaded posts fall off, and has now changed for my second submission.
 
 ![Navbar-mobile](static/readme-images/navbar.mobile.jpg)
 
-About page: 
+### Update 
+
+![navbar-mobile-update](static/readme-images/responsive-mobile.1.png)
+
+### Caveat
+
+- Due to lack of time for handing in the project, the toggle bar isn't 100% appearing at the website.
+- Where it shows is among other uploaded posts | Home page. 
+- This only shows from a mobile device not on everywhere else.
+- It will be fixed in a coming update.
+![caveat-image](static/readme-images/caveat-mobile.png)
+
+## About page: 
 
 About page with closed-Accordion:
 
