@@ -431,10 +431,10 @@ class PostDelete(View):
 
 ## Fixed Error
 
-This is my second submission of this project and I have been witnessing the same error on many occasions as I've been working with a walkthrough project - "I think therefore I blog" and for the first time on Hobby Share. I contacted the TUT support on Code Institute to fix this issue and "Ed" gave me an excellent tip:
+This is my second submission of this project and I have been witnessing the same error on many occasions as I've been working with the walkthrough project - "I think therefore I blog" and for the first time on Hobby Share. I contacted the TUT support on Code Institute to fix this issue and "Ed" gave me an excellent tip:
 
     In the env.py file:
-    os.environ['DEV'] = "#"
+    os.environ['DEV'] = "######"
 
     In the settings.py:
     DEBUG = 'DEV' in os.environ
@@ -484,10 +484,10 @@ All html files were passed by [W3C Validator](https://validator.w3.org/)
 - [Balsamiq](https://balsamiq.com/) - were used to create mockups of the project prior to starting.
 - [Am I Responsive?](https://ui.dev/amiresponsive) - to ensure the project looked good across all devices.
 - [Favicon](https://icons8.com/icons/set/lightbulb) - to provide the code & image for the icon in the tab bar.
-- [Django](https://www.djangoproject.com/)
-- [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-- [Database Design Tool | Creately](https://creately.com/diagram-type/database-design/)
-- Preview (macOS) was used for this README.md file and its design features for images only 
+- [Django](https://www.djangoproject.com/).
+- [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/).
+- [Database Design Tool | Creately](https://creately.com/diagram-type/database-design/).
+- Preview (macOS) was used for this README.md file and its design features for images only. 
 
 
 # Deployment
@@ -585,8 +585,6 @@ The live link for "Hobby Share" can be found [Here](https://sharehobbies.herokua
 - Gender
 - Signup page goes align with creating a profile page.
 - Structurized design regards to the about and profile page.  
-
-
 
 # Credits
 
