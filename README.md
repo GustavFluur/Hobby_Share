@@ -612,7 +612,8 @@ I want to show my gratitude to my mentor on Code Institute, who guided me for th
 - Scott
 - John
 - Alex
-- Rebecca 
+- Rebecca
+- Jason
 
 Thanks for you support, patience and guidance for helping me with Hobby Share. 
 
