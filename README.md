@@ -144,7 +144,7 @@ The log-in page hasn't been updated nor changed when it comes to its design.
 
 ![Updated Design Blogpost](static/readme-images/Update-BlogPost.jpg)
 
-### Color Scheme:
+# Color Scheme:
 
 ![Color Palette](static/readme-images/color-palette.png)
 
@@ -171,7 +171,7 @@ Likewise from [Pexels](https://www.pexels.com/).
 
 
 # Features
-### Existing Features:
+## Existing Features:
 
 Homepage|Uploaded Posts page: 
 
@@ -182,7 +182,7 @@ Paignation function:
 
 ![paignation](static/readme-images/paignation-oage.png)
 
-## Navigation Bar:
+# Navigation Bar:
 
 Desktop: 
 ![Navbar](static/readme-images/navbar-desktop.jpg)
@@ -204,7 +204,7 @@ Desktop:
 
 ![caveat-image](static/readme-images/caveat-mobile.png)
 
-## About page: 
+# About page: 
 
 About page with closed-Accordion:
 
