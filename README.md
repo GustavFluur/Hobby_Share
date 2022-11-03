@@ -201,6 +201,7 @@ Desktop:
 - Where it shows is among other uploaded posts | Home page. 
 - This only shows from a mobile device not on everywhere else.
 - It will be fixed in a coming update.
+
 ![caveat-image](static/readme-images/caveat-mobile.png)
 
 ## About page: 
