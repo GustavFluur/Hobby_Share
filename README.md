@@ -7,6 +7,12 @@ Hobby Share is a community where people are able and willing to share their hobb
 
 This project is dedicated to all ages who are keen to see what kind of hobbies there are out there, the reason behind this is due to overwhelming information regular internet users are interact with on daily basis. That leads to an overload and people becomes quite depressed and having difficulties to process information out there on the internet spectrum. What Hobby Share is a platform for one category that is the share of your interests or hobbies. It's great for both young and old groups to see what kind of interests there - perhaps they all be interesting to create a sense of community on a digital platform. E.g., as it was during the launch of Facebook or Instagram, there no advertisement and other information that especially children or younger people feeling stressed about. On Hobby Share you don't need to feel stressed at all and the only thing Hobby Share want you do know is to inspire other with our own curiosity. 
 
+* Disclaimer: This is an updated version of Hobby Share, due to the last submission had some missing elements. 
+  1. No Agile Methodology
+  2. No accurate User Stories documentation.
+  3. No Documentation of the project's deployment
+  4. No Table of Contents.
+
 ## Table of Contents
 
 
