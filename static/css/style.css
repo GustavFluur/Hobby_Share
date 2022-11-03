@@ -1037,9 +1037,8 @@ Create Post page
         font-style: italic;
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
-        letter-spacing: 4px;
         height: 100%;
-        padding: 100%;  
+        width: 100%;
     }
     
     .about-us-short {
@@ -1067,11 +1066,11 @@ Create Post page
     }
     
     .who-are-we-p {
-        height: 50px;
-        text-align: center;
+        height: 100%;
+        text-align: left;
     }
     .what-we-want-p {
-        height: 50px;
+        height: 100%;
         text-align: center;
     }
     
@@ -1083,8 +1082,8 @@ Create Post page
     .about-us-header {
         font-family: 'Times New Roman', Times, serif;
         letter-spacing: 4px;
-        height: 50px;
-        padding: 40px;
+        height: 100%;
+        width: 100%;
     
     }
     
@@ -1097,19 +1096,19 @@ Create Post page
     
     .brand {
         font-family: 'Times New Roman', Times, serif;
-        font-size: 5rem;
+        font-size: 100%;
         font-weight: 700;
         color: #058ef7;
-        padding: 1%;
+        padding: 100%;
     }
     
     .slogan {
         color: #000000;
         font-family: 'Times New Roman', Times, serif;
-        text-align: left;
-        padding: 1%;
+        text-align: center;
         width: 100%;
         height: 100%;
+        padding-bottom: 7%;
     }
     
     
@@ -1141,7 +1140,7 @@ Create Post page
     }
     
     #word-art {
-        border-radius: 50%;
+        border-radius: 100%;
         box-shadow: 10px 10px 10px 10px;
         background-color: #058ef7;
         width: 100%;
@@ -1150,7 +1149,8 @@ Create Post page
     }
     
     .card-img-top {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        height: 100%;
+        width: 100%;
     }
     
     .author {
@@ -1160,7 +1160,7 @@ Create Post page
     }
     
     .masthead {
-        margin-top: 10px;
+        margin-top: 100%;
         overflow: hidden;
         position: relative;
         display: inline-block;
@@ -1229,12 +1229,15 @@ Create Post page
     .link {
         color: #058ef7;
         text-decoration: none;
+       
     }
     
     .link:hover,
     .link:active {
         color: #445261;
         text-decoration: underline;
+        width: 50%;
+        height: 100%;
     }
     
     .btn-like {
@@ -1251,13 +1254,8 @@ Create Post page
     }
     
     .navbar-collapse {
-        width: 100%;
+        width:auto;        
         height: 100%;
-    }
-    
-    .nav-link {
-        background-color:#058ef7;
-        box-shadow: 10px 10px;
     }
     
     /*===============
