@@ -398,6 +398,37 @@ class PostDelete(View):
 
             return HttpResponseRedirect(reverse('home'))
 
+# 5
+
+## Error
+
+### Before you submit this project it requires that you adjust the settings to DEBUG = FALSE in settings.py file, and once you deploy your project on Heroku, as demonstrated on the images below: 
+![Debug=False](static/readme-images/Degbug%20%3D%20False.png)
+![DEBUG=FALSE.fail:Heroku](static/readme-images/Debug%3DFalse-fail-heroku.png)
+
+### Once I did the website appeared in a non desired way, where all static files including css were gone and had the appearance like this:
+![Debug=False-Fail](static/readme-images/debug%3Dfalse-fail.png)
+
+## Fixed Error
+
+This is my second submission of this project and I have been witnessing the same error on many occasions as I've been working with a walkthrough project - "I think therefore I blog" and for the first time on Hobby Share. I contacted the TUT support on Code Institute to fix this issue and "Ed" gave me an excellent tip:
+
+    In the env.py file:
+    os.environ['DEV'] = "#"
+
+    In the settings.py:
+    DEBUG = 'DEV' in os.environ
+
+### That paid the way for success of deploying the website without any risks of losing the necessary static files that requires. Because the DEBUG setting will be set to False unless you add a key called 'DEV' to your Heroku Config Vars.
+
+### For instance once I tested this on my Heroku app by going to a gibberish address e.g.: 
+### https://sharehobbies.herokuapp.com/d41d1d1/ - It gave a 404 with no Django-related info:
+
+![mock-address](static/readme-images/sharehobbies.herokuapp.com%3Ad41d1d1%3A.png)
+
+### According to Ed on Tut Support, he stated: "That's what you want - it means DEBUG is False. If it was True, you would get a yellow error page with lots of info in it" Therefore I applied these new variables and feature into this project. 
+
+
 # Validator Test
 
 - [Pep8online](http://pep8online.com/) is unfortunately unaccessible at this time, the only source of test I was able to make for this project was look through my terminal or the installed pep8 compliant. (Directed from the Tut support)
@@ -485,7 +516,9 @@ connected my github account to Heruko through the Deploy tab
 
 connected my github project repository, and then clicked on the "Deploy" button
 
-The live link for "Hobby Share" can be found HERE
+The live link for "Hobby Share" can be found [Here](https://sharehobbies.herokuapp.com/)!
+
+
 
 # Installed Packages:
 
@@ -549,6 +582,19 @@ The live link for "Hobby Share" can be found HERE
 I want to show my gratitude to my mentor on Code Institute, who guided me for this project.
 
 - Martina Terlevic
+
+# Credits to TUT Support on Code Institute
+
+- Ed 
+- Gemma
+- Osin
+- Ger
+- Scott
+- John
+- Alex
+- Rebecca 
+
+Thanks for you support, patience and guidance for helping me with Hobby Share. 
 
 
 
