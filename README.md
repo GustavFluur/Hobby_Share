@@ -9,9 +9,10 @@ This project is dedicated to all ages who are keen to see what kind of hobbies t
 
 * Disclaimer: This is an updated version of Hobby Share, due to the last submission had some missing elements. 
   1. No Agile Methodology
-  2. No accurate User Stories documentation.
+  2. No accurate User Story documentation.
   3. No Documentation of the project's deployment
   4. No Table of Contents.
+  5. No presentation of what technologies were used.
 
 ## Table of Contents
 
